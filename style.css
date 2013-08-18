@@ -1,0 +1,27 @@
+body{background-color:black;
+	color:blue;
+	font-family:sans-serif;
+	margin:5px;
+}
+p{word-wrap:normal;}
+a{color:white;}
+#cel{float:left;margin-left:40%;}
+#visualization{text-align:center;margin-right:51%;margin-left:15%;
+border-style:solid;position:absolute;width:35%;}
+#information{text-align:right;margin-left:51%;margin-right:10%;
+	border-style:solid;padding-right:10px;}
+#previewwheel{margin-left:10%; margin-right:10%; border-style:solid; margin-top:120px;}
+#main{text-align:center;font-family:fantasy;}
+#menu{background-color:blue;font-size:20px;padding-left:3px;padding-right:3px; margin:4px;}
+span{	background-color:purple;
+	color:white;
+	text-align:center;
+	border: 2px solid gray;
+	font-family:monospace;
+	padding-left:2px;padding-right:2px;
+	font-size:large;
+}
+.Hover{ border: 2px solid white; 
+}
+.Activate{ border: 2px solid red; 
+}

@@ -1,0 +1,10 @@
+$(document).ready(function(){
+	$("img").hover(
+		function(){$(this).addClass("HoverIMG");},
+		function(){$(this).removeClass("HoverIMG");}
+	);
+	$("span").hover(
+		function(){$(this).addClass("HoverSPAN");},
+		function(){$(this).removeClass("HoverSPAN");}
+	)
+}); 
