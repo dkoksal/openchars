@@ -1,0 +1,11 @@
+<script>
+$(document).ready(function(){
+  $get('data/fig.xml', function(d)){
+    ($(d).find('').each(function(){
+      var $fig = $(this);
+      var html;
+      
+    });
+  });
+});
+</script>
