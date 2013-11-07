@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<ImageListing>
+	<graphic>graphics/Sprites/Weapons/Throw/throwarrow.png</graphic>
+	<graphic>graphics/Sprites/Weapons/Throw/throwice.png</graphic>
+	<graphic>graphics/Sprites/Weapons/Throw/throw0.png</graphic>
+	<graphic>graphics/Sprites/Weapons/Throw/throwfire.png</graphic>
+</ImageListing>
