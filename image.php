@@ -9,21 +9,21 @@ class image_reference{
     echo("<img src=\"" + $this->img_src + "\"" + "alt=\"" + $this->part +"," + $this->tags + "," + $this->creator + "\"");
   }
   public writeout(){
-    $file1=fopen("data/" + $this->part + ".xml", a+);
-    $size1=filesize("data/" + $this->part + ".xml");
-    $text1="<ref imgsrc='"+$this->img_src+"' bpart='"+ $this->part + "' uid='" + $this->uid + "' creator='" + $this->creator + "' taglist='" + $this->tags + " >";
+    $siteversion=fopen("data/site/" + $this->part + ".xml", a+);
+    $sitesize=filesize("data/site/" + $this->part + ".xml");
+    $sitetext="<ref imgsrc='"+$this->img_src+"' bpart='"+ $this->part + "' uid='" + $this->uid + "' creator='" + $this->creator + "' taglist='" + $this->tags + " >";
     fwrite($this->file1, text1);
-    $file2=fopen("data/" + $this->part + ".xml", a+);
-    $size2=filesize("data/" + $this->part + ".xml");
-    $text2="<ref bpart='"+ $this->part + "' uid='" + $this->uid + "' taglist='" + $this->tags + " >";
+    $userversion=fopen("data/user/" + $this->part + ".xml", a+);
+    $usersize=filesize("data/user/" + $this->part + ".xml");
+    $usertext="<ref bpart='"+ $this->part + "' uid='" + $this->uid + "' taglist='" + $this->tags + " >";
     fwrite($this->file2, text2);
   }
   public readin($info){
-      $this->img_src = $info['img'];
-      $this->part = $info['part'];
-      $this->creator = $info['creator'];
-      $this->uid = $info['uid'];
-      $this->tags = $info['tags'];
+    $this->img_src = $info['img'];
+    $this->part = $info['part'];
+    $this->creator = $info['creator'];
+    $this->uid = $info['uid'];
+    $this->tags = $info['tags'];
   }
 }
 ?>

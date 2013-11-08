@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Openchars Prototype</title>
+</head>
+<body>
+<span id="spimage">
+
+Lorem ipsum dolor sit amet
+</span>
+<span id="curmenu">
+
+Lorem ipsum dolor sit amet
+</span>
+<span id="laymenu">
+
+Lorem ipsum dolor sit amet
+</span>
+<span id="contrib">
+
+Lorem ipsum dolor sit amet
+</span>
+<script src="getlist.js"></script>
+
+<script src="getlist.js"></script>
+<script src="contribute.js"></script>
+</body>
+
+</html> 
