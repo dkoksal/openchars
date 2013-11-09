@@ -7,9 +7,12 @@ body{
 span {
 	border:2px solid;
 	border-radius:2px;
-	margin:.3%;
+	padding:.3%;
 	display: inline-block;
 	font-family:monospace;
+}
+#page{
+	height:100%;
 }
 #spimage{
 	float:right;
@@ -27,13 +30,15 @@ span {
 	height:30%;
 }
 #contrib{
+	text-align:right;
 	float:right;
 	width:60%;
 	height:30%;
 }
 #loaddialog{
+	text-align:left;
 	width:98%;
-	height:88%;
+	height:85%;
 }
 #filemenu{
 	float:left;
