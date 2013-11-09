@@ -4,26 +4,27 @@
 <title>Openchars Prototype</title>
 </head>
 <body>
-<span id="spimage">
-
-Lorem ipsum dolor sit amet
-</span>
 <span id="curmenu">
-
-Lorem ipsum dolor sit amet
+	This span contains the current cel-image selector menu
+</span>
+<span id="spimage">
+This span contains the sprite image itself
 </span>
 <span id="laymenu">
-
-Lorem ipsum dolor sit amet
+	This span allows you to fine-tune which layer the cell occurs on
 </span>
 <span id="contrib">
-
-Lorem ipsum dolor sit amet
+Contribute a new image to the collection:
+<span id="loaddialog">
+Select an image from your computer:
+<span id="filemenu" class="menu">Files Menu</span>
+<span id="loadimage" class="button">Next</span>
 </span>
-<script src="getlist.js"></script>
-
+</span>
+<script src="jquery-2.0.3.js"></script>
 <script src="getlist.js"></script>
 <script src="contribute.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
 </body>
 
 </html> 

@@ -33,7 +33,7 @@ span {
 }
 #loaddialog{
 	width:98%;
-	height:85%;
+	height:88%;
 }
 #filemenu{
 	float:left;
