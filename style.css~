@@ -5,11 +5,16 @@ body{
 	height:100%;
 }
 span {
+	position:relative;
 	border:2px solid;
 	border-radius:2px;
 	padding:.3%;
 	display: inline-block;
 	font-family:monospace;
+}
+h1{
+	padding:0;
+	margin:0;
 }
 #page{
 	height:100%;
@@ -44,6 +49,11 @@ span {
 	float:left;
 	width:60%;
 }
+#preview{
+	height:70%;
+	width:35%;
+	float:right;
+}
 #loadimage{
 	float:right;
 	bottom:1px;
@@ -51,7 +61,14 @@ span {
 .button{
 	background:grey;
 }
+.wide{
+	background:grey;
+	width:98%;
+}
 .menu{
 	background:silver;
 	height:90%;
+}
+.picture{
+	
 }

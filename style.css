@@ -5,6 +5,7 @@ body{
 	height:100%;
 }
 span {
+	position:relative;
 	border:2px solid;
 	border-radius:2px;
 	padding:.3%;
@@ -48,6 +49,11 @@ h1{
 	float:left;
 	width:60%;
 }
+#preview{
+	height:70%;
+	width:35%;
+	float:right;
+}
 #loadimage{
 	float:right;
 	bottom:1px;
@@ -55,7 +61,14 @@ h1{
 .button{
 	background:grey;
 }
+.wide{
+	background:grey;
+	width:95%;
+}
 .menu{
 	background:silver;
 	height:90%;
+}
+.picture{
+	
 }
