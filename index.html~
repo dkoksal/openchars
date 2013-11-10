@@ -21,15 +21,26 @@ Contribute a new image to the collection:
 <span id="loaddialog">
 Select an image from your computer:
 <span id="filemenu" class="menu">
-<span id="fub0" class="wide">File Menu Button 0</span>
-<span id="fub1" class="wide">File Menu Button 1</span>
-<span id="fub2" class="wide">File Menu Button 2</span>
-<span id="fub3" class="wide">File Menu Button 3</span>
-<span id="fub4" class="wide">File Menu Button 4</span>
-<span id="fub5" class="wide">File Menu Button 5</span>
-<span id="fub6" class="wide">File Menu Button 6</span>
+<input type="file" id="file" name="file" single />
+<output id="list"></output>
+
+<script>
+  function handleFileSelect(evt) {
+    var file = evt.target.file; // File object
+
+    // file is File object. List some properties.
+    var output = [];
+      output.push('<li><strong>', escape(f.name), '</strong> (', f.type || 'n/a', ') - ',
+                  f.size, ' bytes, last modified: ',
+                  f.lastModifiedDate ? f.lastModifiedDate.toLocaleDateString() : 'n/a',
+                  '</li>');
+    document.getElementById('list').innerHTML = '<ul>' + output.join('') + '</ul>';
+  }
+
+  document.getElementById('file').addEventListener('change', handleFileSelect, false);
+</script>
 </span>
-<span id="preview" class="picture">Preview</span>
+<span id="preview" class="picture">Preview:<img id="prev" src="MaleModel_01.png"></img></span>
 <span id="loadimage" class="button">Next</span>
 </span>
 </span>

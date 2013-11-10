@@ -54,6 +54,9 @@ h1{
 	width:35%;
 	float:right;
 }
+#prev{
+	height:95%;
+}
 #loadimage{
 	float:right;
 	bottom:1px;
@@ -63,7 +66,8 @@ h1{
 }
 .wide{
 	background:grey;
-	width:98%;
+	width:90%;
+	float:left;
 }
 .menu{
 	background:silver;
