@@ -13,8 +13,8 @@ $(document).ready(function(){
 		
 	});
 	$("#filelist").mouseup(function(){
-		    $("#prev").click();
+		$("#file").click();
+		    //s("#prev").attr("src",);
 	});
-)
 });
 //@license-end
