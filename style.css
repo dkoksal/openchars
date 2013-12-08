@@ -46,21 +46,20 @@ h1{
 }
 #loaddialog{
 	text-align:left;
-	width:98%;
-	height:85%;
+	width:90%;
+	height:65%;
 }
 #filemenu{
 	float:left;
-	width:60%;
+	width:50%;
 }
 #preview{
 	height:70%;
-	width:35%;
+	width:15%;
 	float:right;
 }
 #loadimage{
 	float:right;
-	bottom:1px;
 }
 .button{
 	background:silver;
@@ -83,4 +82,8 @@ h1{
 	background:white;
 	width:30%;
 	height:85%;
+}
+.hidden{
+	visibility:hidden;
+	display:none;
 }

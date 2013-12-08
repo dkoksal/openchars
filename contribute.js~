@@ -9,11 +9,5 @@ $(document).ready(function(){
 			
 		});
 	});
-	$("#filelist").mousedown(function(){
-		
-	});
-	$("#filelist").mouseup(function(){
-		    //s("#prev").attr("src",);
-	});
 });
 //@license-end
