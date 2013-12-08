@@ -67,6 +67,11 @@ h1{
 	width:21%;
 	height:68px;
 }
+.label{
+	background:white;
+	width:21%;
+	height:68px;
+}
 .info{
 	background:grey;
 }
@@ -78,8 +83,4 @@ h1{
 	background:white;
 	width:30%;
 	height:85%;
-}
-.ipreview{
-	background:white;
-	max-width:152px;
 }
