@@ -11,12 +11,16 @@ span {
 	padding:.3%;
 	display: inline-block;
 	font-family:monospace;
+	color:black;
+	border-color:silver;
 }
 h1{
 	padding:0;
 	margin:0;
 }
 #page{
+	background:black;
+	color:white;
 	height:100%;
 }
 #spimage{
@@ -54,9 +58,6 @@ h1{
 	width:35%;
 	float:right;
 }
-#prev{
-	height:97%;
-}
 #loadimage{
 	float:right;
 	bottom:1px;
@@ -70,11 +71,15 @@ h1{
 	background:grey;
 }
 .menu{
-	background:silver;
+	background:grey;
 	height:90%;
 }
 .preview{
 	background:white;
 	width:30%;
 	height:85%;
+}
+.ipreview{
+	background:white;
+	max-width:152px;
 }

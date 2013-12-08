@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Openchars Prototype</title>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-</head>
+<head><title>Openchars Prototype</title><meta http-equiv="content-type" content="text/html; charset=UTF-8"></head>
 <body>
 <span id="page">
 <h1><center>Openchars Prototype</center></h1>
@@ -23,12 +20,12 @@
 </span>
 <span id="spimage" class="info">
 	<center>
-		This span contains the sprite image itself<br>
+		<h2><center>This span contains the sprite image itself</center></h2><br>
 		<span id="pwimg" class="preview">
-			<img src=""class="preview"alt=""></img>
+			<img src="images/figures/HumanMale_01.png" class="ipreview" alt="sprite"></img>
 		</span>
 		<span id="csimg" class="preview">
-			<img src=""class="preview"alt="layer"></img>
+			<img src="images/Pants/GldPlatePantsMale_01.png" class="ipreview" alt="layer"></img>
 		</span>
 		<span id="csinfo" class="preview">
 			lorem
@@ -44,18 +41,18 @@
 	</center>
 </span>
 <span id="contrib" class="menu">
-Contribute a new image to the collection:
-<span id="loaddialog">
-Select an image from your computer:
-<span id="filemenu" class="menu">
-<input type="file" id="file" name="file" single />
-<output id="list"></output>
-</span>
-<span id="preview" class="picture">Preview:<img id="prev" src="MaleModel_01.png"></img></span>
-<span id="loadimage">Next</span>
-</span>
-</span>
-</span>
+	<right><strong>Contribute a new image to the collection:</strong></right>
+	<span id="loaddialog">
+		Select an image from your computer:
+		<span id="filemenu" class="menu">
+			<input type="file" id="file" name="file" single />
+		<output id="list"></output>
+		</span>
+		<span id="preview" class="picture">Preview:<img class="menu" src="MaleModel_01.png"></img></span>
+		<span id="loadimage">Next</span>
+		</span>
+	</span>
+	</span>
 <script src="jquery-2.0.3.js"></script>
 <script src="getlist.js"></script>
 <script src="contribute.js"></script>
