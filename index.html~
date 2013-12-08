@@ -7,41 +7,52 @@
 <body>
 <span id="page">
 <h1><center>Openchars Prototype</center></h1>
-<span id="curmenu">
-	This span contains the current cel-image selector menu
+<span id="curmenu" class="menu">
+	<h2><center>Edit Menu</center></h2>
+	<center>
+		Select an image<br>
+		<span id="previmg" class="button"> << </span>
+		<span id="nextimg" class="button"> >> </span>
+		<br>Select a category:<br>
+		<span id="upcat" class="button"> ^^ </span>
+		<span id="downcat" class="button"> vv </span>
+		<br>Misc:<br>
+		<span id="filter" class="button"> Filter </span>
+		<span id="saveas" class="button"> Save As </span>
+	</center>
 </span>
-<span id="spimage">
-This span contains the sprite image itself
+<span id="spimage" class="info">
+	<center>
+		This span contains the sprite image itself<br>
+		<span id="pwimg" class="preview">
+			<img src=""class="preview"alt=""></img>
+		</span>
+		<span id="csimg" class="preview">
+			<img src=""class="preview"alt="layer"></img>
+		</span>
+		<span id="csinfo" class="preview">
+			lorem
+		</span>
+	</center>
 </span>
-<span id="laymenu">
-	This span allows you to fine-tune which layer the cell occurs on
+<span id="laymenu" class="menu">
+	<h2><center>Layering Menu</center></h2>
+	<center>
+		Fine-Tune Layers: <br>
+		<span id="uplayer" class="button"> vv </span>
+		<span id="downlayer" class="button"> vv </span>
+	</center>
 </span>
-<span id="contrib">
+<span id="contrib" class="menu">
 Contribute a new image to the collection:
 <span id="loaddialog">
 Select an image from your computer:
 <span id="filemenu" class="menu">
 <input type="file" id="file" name="file" single />
 <output id="list"></output>
-
-<script>
-  function handleFileSelect(evt) {
-    var file = evt.target.file; // File object
-
-    // file is File object. List some properties.
-    var output = [];
-      output.push('<li><strong>', escape(f.name), '</strong> (', f.type || 'n/a', ') - ',
-                  f.size, ' bytes, last modified: ',
-                  f.lastModifiedDate ? f.lastModifiedDate.toLocaleDateString() : 'n/a',
-                  '</li>');
-    document.getElementById('list').innerHTML = '<ul>' + output.join('') + '</ul>';
-  }
-
-  document.getElementById('file').addEventListener('change', handleFileSelect, false);
-</script>
 </span>
 <span id="preview" class="picture">Preview:<img id="prev" src="MaleModel_01.png"></img></span>
-<span id="loadimage" class="button">Next</span>
+<span id="loadimage">Next</span>
 </span>
 </span>
 </span>

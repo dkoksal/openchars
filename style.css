@@ -62,17 +62,19 @@ h1{
 	bottom:1px;
 }
 .button{
-	background:grey;
+	background:silver;
+	width:21%;
+	height:68px;
 }
-.wide{
+.info{
 	background:grey;
-	width:90%;
-	float:left;
 }
 .menu{
-	background:silver;
+	background:grey;
 	height:90%;
 }
-.picture{
-	
+.preview{
+	background:white;
+	width:30%;
+	height:85%;
 }
