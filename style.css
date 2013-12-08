@@ -22,6 +22,7 @@ h1{
 	background:black;
 	color:white;
 	height:100%;
+	width:100%;
 }
 #spimage{
 	float:right;
@@ -59,6 +60,15 @@ h1{
 	float:right;
 }
 #loadimage{
+	float:right;
+}
+#advancetometa{
+	float:right;
+}
+#advancetoconfirm{
+	float:right;
+}
+#advancetoupload{
 	float:right;
 }
 .button{

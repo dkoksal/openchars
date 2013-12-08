@@ -47,30 +47,35 @@
 		<right><strong>Contribute a new image to the collection:</strong></right>
 		<center><span id="loaddialog" class="dialog">
 			Select an image from your computer:<br>
-			<span id="filemenu" class="menu"> Javascript loader not available</span>
+			<span id="filemenu"> Javascript loader not available</span>
 			<span id="preview" class="picture">Preview:
 				<img src="MaleModel_01.png"></img></span>
 			<span id="advancetometa" class="button">Next: Enter Metadata</span>
 		</span></center>
-		<center><span id="metadialog" class="hidden" class="dialog">
-			Input information about your content:
-			<span id="metamenu" class="menu"> 
-				<span id="namelabel">Name Label</span><br>
-				<span id="tagslabel">Tags Label</span><br>
-				<span id="authlabel">Author Label</span><br>
+		<center><span id="metadialog" class="hidden dialog">
+			Input information about your content:<br>
+			<span id="metamenu"> Meta Information:<br>
+				<span id="namelabel">Name Label</span><input type="text" id="i_name"></input><br>
+				<span id="tagslabel">Tags Label</span><input type="text" id="i_name"></input><br>
+				<span id="authlabel">Author Label</span><input type="text" id="i_name"></input><br>
 			</span>
 			<span id="preview" class="picture">Preview:
 				<img src="MaleModel_01.png"></img></span>
 			<span id="advancetoconfirm" class="button">Next: Confirm Upload</span>
 		</span></center>
-		<center><span id="confdialog" class="hidden" class="dialog">
+		<center><span id="confdialog" class="hidden dialog">
 			Select an image from your computer:<br>
-			<span id="confmenu" class="menu"> Javascript loader not available</span>
+			<span id="confmenu"> 
+				<span id="namelabel">Location:</span><br>
+				<span id="namelabel">Name Label:</span><br>
+				<span id="tagslabel">Tags Label:</span><br>
+				<span id="authlabel">Author Label:</span><br>
+			</span>
 			<span id="preview" class="picture">Preview:
 				<img src="MaleModel_01.png"></img></span>
 			<span id="advancetoupload" class="button">Upload your content</span>
 		</span></center>
-	</span>
+	
 </span>
 <script src="jquery-2.0.3.js"></script>
 <!--<script src="getlist.js"></script>-->
