@@ -56,6 +56,7 @@ h1{
 #preview{
 	height:70%;
 	width:15%;
+	float:right;
 }
 #loadimage{
 	float:right;
@@ -85,4 +86,9 @@ h1{
 .hidden{
 	visibility:hidden;
 	display:none;
+}
+.dialog{
+	text-align:center;
+	width:90%;
+	height:65%;
 }

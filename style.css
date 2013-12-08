@@ -5,7 +5,7 @@ body{
 	height:100%;
 }
 span {
-	position:relative;
+	
 	border:2px solid;
 	border-radius:2px;
 	padding:.3%;
@@ -86,4 +86,9 @@ h1{
 .hidden{
 	visibility:hidden;
 	display:none;
+}
+.dialog{
+	text-align:center;
+	width:90%;
+	height:65%;
 }

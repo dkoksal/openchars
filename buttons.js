@@ -16,7 +16,14 @@ $(document).ready(function(){
 	});
 	$("#downlayer").on("click", function() {
 	});
-	$("#").on("click", function() {
+	$("#advancetometa").on("click", function() {
+		advmeta();
+	});
+	$("#advancetoconfirm").on("click", function() {
+		advconf();
+	});
+	$("#advancetoupload").on("click", function() {
+		advupld();
 	});
 	$(".button").mousedown(function(){
 		$(this).css("border-color","grey");
