@@ -3,7 +3,7 @@ openchars
 
 Openchars(Working name) is a tool for archiving, accessing, and viewing what hopefully will be a vast collection of 2d cel animations for use in RPG maker type games.
 ---------
-Openchars is intended to provide all the functionality if the charaset generators at http://charas-project.net in a modern package.  
+Openchars is intended to provide all the functionality of the charaset generators at http://charas-project.net in a modern package.  
 I'm not great at separating the work in web development projects so I'm going to try and keep things up to date on their face by keeping track of them in this readme file until I find a better way to plagon this project.
 
  * PHP Components: The idea is to do very little on the server-side other than retrieve the image files for placement on the page and for saving files to the server. It's *just* handing the information to the client program to display.  
