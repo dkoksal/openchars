@@ -5,7 +5,7 @@ Openchars(Working name) is a tool for archiving, accessing, and viewing what hop
 ---------
 Openchars is intended to provide all the functionality of the charaset generators at http://charas-project.net in a modern package.  
 
-I'm not great at separating the work in web development projects so I'm going to try and keep things up to date on their face by keeping track of them in this readme file until I find a better way to plan this project. So, as a readme, this is going to be ridonculous. But if needlessly exhaustive documentation of a relatively simple task is your thing, then my man you have come to the right place.  
+I'm not great at separating the work in web development projects so I'm going to try and keep things up to date on their face by keeping track of them in this readme file until I find a better way to plan this project. So, as a readme, this is going to be ridonculous. But if needlessly exhaustive documentation of a relatively simple task is your thing, then my man you have come to the right place. For right now, I'm adding to it as I finish parts of the project as well.  
 
  * PHP Components: The idea is to do very little on the server-side other than retrieve the image files for placement on the page and for saving files to the server. It's *just* handing the information to the client program to display.  
 
@@ -36,5 +36,13 @@ Might be fun to propose some social features. Lots of space for buttons in the n
  * Javascript/jQuery Components: The Javascript/jQuery components are the most important. I'm pretty sure I need to be binding functions to the HTML events above, but I need to get a clear picture of what I'm doing before I do this section.  
     -buttons.js: all the click event handlers for everything that qualifies as a "Button" in the application gathered into one place. Decorations and effects that apply to all "Button"s Intended solely to call functions located elsewhere in code.  
     -preview.js: all the functions necessary for generating an image preview and scaling the preview to an appropriate size.  
+
+         'Make Transparent'
+         'Zoom Image'
     -getlist.js: pulls a list of images down off the server and stores them on the client.  
     -contribute.js: contains functions for encapsulating and uploading user contributed content.  
+
+         'Advance file upload menu'
+         'Advance metadata entry menu'
+         'Advance confirmation menu and return to file upload menu'
+

@@ -47,7 +47,7 @@ h1{
 }
 #loaddialog{
 	text-align:left;
-	width:90%;
+	width:95%;
 	height:65%;
 }
 #filemenu{
@@ -63,13 +63,13 @@ h1{
 	float:right;
 }
 #advancetometa{
-	float:left;
+	float:right;
 }
 #advancetoconfirm{
-	float:left;
+	float:right;
 }
 #advancetoupload{
-	float:left;
+	float:right;
 }
 .button{
 	background:silver;
@@ -99,6 +99,6 @@ h1{
 }
 .dialog{
 	text-align:center;
-	width:90%;
+	width:95%;
 	height:65%;
 }
