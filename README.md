@@ -34,7 +34,7 @@ Might be fun to propose some social features. Lots of space for buttons in the n
     -Contribute Menu: Designed to make it easy to contribute new assets to the site. It has a button for selecting a file from the local disk, fields for entering information about the image and selecting which category to place it on by default.  
 
  * Javascript/jQuery Components: The Javascript/jQuery components are the most important. I'm pretty sure I need to be binding functions to the HTML events above, but I need to get a clear picture of what I'm doing before I do this section.  
-    -buttons.js: all the click event handlers for everything that qualifies as a "Button" in the application gathered into one place. Decorations and effects that apply to all "Button"s Intended solely to call functions located elsewhere in code.
-    -preview.js: all the functions necessary for generating an image preview and scaling the preview to an appropriate size.
-    -getlist.js: pulls a list of images down off the server and stores them on the client.
-    -contribute.js: contains functions for encapsulating and uploading user contributed content.
+    -buttons.js: all the click event handlers for everything that qualifies as a "Button" in the application gathered into one place. Decorations and effects that apply to all "Button"s Intended solely to call functions located elsewhere in code.  
+    -preview.js: all the functions necessary for generating an image preview and scaling the preview to an appropriate size.  
+    -getlist.js: pulls a list of images down off the server and stores them on the client.  
+    -contribute.js: contains functions for encapsulating and uploading user contributed content.  
