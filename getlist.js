@@ -14,7 +14,7 @@ list.prototype.render = function(){
 }
 
 var test = ["pants","male"];
-var l=new listing("images/Pants/LthrPlatePantsMale_01.png","Leather Pants 0",2013,test,"dyngar",1);
+var l=new listing("images/Pants/LthrPlatePantsMale_01.png","Leather Pants 0",2013,"Andrew Friend",1);
 
 function nextimg(){
 	l.render();
