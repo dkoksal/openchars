@@ -11,6 +11,9 @@ function listing(location, name, age, auth, layer){
 listing.prototype.render = function() {
 	$("#csimg").attr("src",this.location);
 	$("#csimg").attr("alt",this.name);
+	$("#name").text(this.name);
+	$("#tags").text(this.tags);
+	$("#auth").text(this.auth);
 };
 function advmeta(){
 	$("#loaddialog").addClass("hidden");

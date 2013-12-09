@@ -9,9 +9,11 @@ function listing(location, name, age, auth, layer){
 	console.log("loaded location information for" + this.name + this.location);
 };
 listing.prototype.render = function() {
-
 	$("#csimg").attr("src",this.location);
 	$("#csimg").attr("alt",this.name);
+	$("#name").text();
+	$("#tags").text();
+	$("#auth").text();
 };
 function advmeta(){
 	$("#loaddialog").addClass("hidden");
