@@ -3,7 +3,7 @@ $(document).ready(function(){
 	$("#previmg").on("click", function() {
 	});
 	$("#nextimg").on("click", function() {
-		nextimg();
+		testrender();
 	});
 	$("#upcat").on("click", function() {
 	});

@@ -75,7 +75,7 @@ h1{
 	width:21%;
 	height:68px;
 }
-.thumb{
+.button{
 	width:9%;
 }
 .label{
