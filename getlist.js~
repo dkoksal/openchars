@@ -23,7 +23,7 @@ listing.prototype.append = function() {
 //	this.cache(this.cache.length+1) = new listing(,,,,,this.layer);
 };
 listing.prototype.render = function(){
-	this.cache(index).render();
+
 }
 
 var test = ["pants","male"];

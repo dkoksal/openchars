@@ -46,11 +46,11 @@
 	<span id="contrib" class="menu">
 		<right><strong>Contribute a new image to the collection:</strong></right>
 		<center><span id="loaddialog" class="dialog">
-			Select an image from your computer:<br>
+			<center>Select an image from your computer:<br>
 			<span id="filemenu"> Javascript loader not available</span>
 			<span id="preview" class="picture">Preview:
 				<img src="MaleModel_01.png"></img></span>
-			<span id="advancetometa" class="button">Next: Enter Metadata</span>
+			<span id="advancetometa" class="button">Next: Enter Metadata</span></center>
 		</span></center>
 		<center><span id="metadialog" class="hidden dialog">
 			Input information about your content:<br>
