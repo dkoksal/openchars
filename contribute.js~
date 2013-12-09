@@ -8,13 +8,32 @@ function listing(location, name, age, auth, layer){
 	this.layer=0;
 	console.log("loaded location information for" + this.name + this.location);
 };
+listing.prototype.update = function(){
+	$("#name").text(this.name);
+	$("#tags").text(this.tags);
+	$("#auth").text(this.auth);
+};
 listing.prototype.render = function() {
 	$("#csimg").attr("src",this.location);
 	$("#csimg").attr("alt",this.name);
-	$("#name").text();
-	$("#tags").text();
-	$("#auth").text();
+	this.update();
 };
+listing.prototype.tag = function(tags){
+	for(i=0;i<tags.length;++a){
+		this.tags[index]=tags[i];
+	}
+};
+$(document).ready(function(){
+	$("#i_name").on("keydown", function() {
+
+	});
+	$("#i_tags").on("keydown", function() {
+
+	});
+	$("#i_name").on("keydown", function() {
+
+	});
+});
 function advmeta(){
 	$("#loaddialog").addClass("hidden");
 	$("#metadialog").removeClass("hidden");
