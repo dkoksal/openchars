@@ -24,7 +24,7 @@
 		<center>
 			<h2><center>This span contains the sprite image itself</center></h2><br>
 			<span class="slidewheel">
-				<h4>Thumbnails</strong><br>
+				<strong>Thumbnails</strong><br>
 				<span class="thumb">xxxx</span><span class="thumb">xxxx</span><span class="thumb">xxxx</span><span class="thumb">xxxx</span><span class="thumb">xxxx</span><span class="thumb">xxxx</span><span class="thumb">xxxx</span><span class="thumb">xxxx</span><span class="thumb">xxxx</span>
 			</span><br><br>
 			<span class="preview">
@@ -34,7 +34,10 @@
 				<img id="csimg" src="images/Pants/GldPlatePantsMale_01.png" alt="layer"></img>
 			</span>
 			<span id="csinfo" class="preview">
-				lorem
+				<span id="loclabel">Location Label:</span><span id="loc">Location of the file</span><br>
+				<span id="namelabel">Name Label:</span><span id="name">Name of the image</span><br>
+				<span id="tagslabel">Tags Label:</span><span id="tags">Tags about the image</span><br>
+				<span id="authlabel">Author Label:</span><span id="auth">Authorship</span><br>
 			</span>
 		</center>
 	</span>

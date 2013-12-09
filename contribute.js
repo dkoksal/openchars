@@ -9,8 +9,6 @@ function listing(location, name, age, auth, layer){
 	console.log("loaded location information for" + this.name + this.location);
 };
 listing.prototype.render = function() {
-//	$("#csimg").attr("src","images/Pants/LthrPlatePantsMale_01.png");
-//	$("#csimg").attr("alt","pants2");
 	$("#csimg").attr("src",this.location);
 	$("#csimg").attr("alt",this.name);
 };
