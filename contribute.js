@@ -23,15 +23,29 @@ listing.prototype.tag = function(tags){
 		this.tags[index]=tags[i];
 	}
 };
+listing.prototype.submit = function(){
+	var request = $.ajax({
+		url: "contrib.php",
+		type: "GET",			
+		dataType: "html"
+		//data:
+	});
+	request.done(function(msg) {
+		//$("#mybox").html(msg);			
+	});
+	request.fail(function(jqXHR, textStatus) {
+		alert( "Request failed: " + textStatus );
+	});
+}
 $(document).ready(function(){
 	$("#i_name").on("keydown", function() {
-
+		
 	});
 	$("#i_tags").on("keydown", function() {
-
+		
 	});
 	$("#i_auth").on("keydown", function() {
-
+		
 	});
 });
 function advmeta(){
