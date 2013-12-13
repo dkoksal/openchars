@@ -80,7 +80,7 @@ class image_reference{
 		"<uid>" + $this->uid + "</uid>" + 
 		"<auth>" + $this->auth + "</auth>" + 
 		"<layer>" + $this->layer + "</layer>" )
-	fclose($file );
+	fclose($file);
   }
   function readin($info){
 

@@ -73,7 +73,7 @@ class image_reference{
 	   exit();
 	}
 	fwrite( $file, 
-		"<location>" + + "</location>" + 
+		"<location>" + $this->location + "</location>" + 
 		"<name>" + $this->name + "</name>" + 
 		"<age>" + $this->age + "</age>" + 
 		"<tags>" + $this->writetags() + "</tags>" + 
