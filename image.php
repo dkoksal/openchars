@@ -7,7 +7,7 @@ class image_reference{
   private $tags;
   private $auth;
   private $layer;
- /* function __construct(){
+ function __construct(){
 	  $this->name=rand(1000000, 9999999) + ".png";
 	  $this->img_src="charas/"+$this->name;
 	  $this->age=getdate();
@@ -15,7 +15,7 @@ class image_reference{
 	  $this->tags[0]="#";
 	  $this->auth="anonymous";
 	  $this->layer=0;
-  } */
+  }
   function __construct($list){
 	if($list["name"]){
 		$this->name=$list["name"];

@@ -5,6 +5,7 @@ function listing(location, name, age, auth, layer){
 	this.age=age;
 	this.tags=new Array();
 	this.auth=auth;
+	this.uid=;
 	this.layer=9;
 	console.log("loaded location information for" + this.name + this.location);
 };
