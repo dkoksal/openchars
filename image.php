@@ -70,7 +70,7 @@ $filename=$this->auth + "/" $this->name + $this.uid;
 		"<layer>" + $this->layer + "</layer>" )
 	fclose( $file )
 */
-  }
+  }http://www.php.net/manual/en/language.oop5.decon.php
   public readin($info){
 
   }
