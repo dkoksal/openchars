@@ -7,6 +7,15 @@ class image_reference{
   private $tags;
   private $auth;
   private $layer;
+  public __construct(){
+	  $this->name=rand(1000000, 9999999) + ".png";
+	  $this->img_src="charas/"+$this->name;
+	  $this->age=getdate();
+	  $this->uid=hash("md5",$this->name+$this->auth;$this->age,false);
+	  $this->tags[0]="#";
+	  $this->auth="anonymous";
+	  $this->layer=0;
+  }
   public __construct($list){
 	if($list('name')){
 		$this->name=$list("'name'");
@@ -46,20 +55,17 @@ class image_reference{
 	$this->writeout();
   }
   public show(){
-	
+	                                                     
   }
   private writetags(){
-/*
 	$temp = null;
 	for($i=0;i<count($this->tags);++$i){
 		$temp += "<t>" + $this->tags[i] + "</t>";
 	}
 	return $temp;
-*/
   }
   public writeout(){
-/*	
-$filename=$this->auth + "/" $this->name + $this.uid;
+	$filename=$this->auth + "/" $this->name + $this.uid;
 	$file = fopen($filename);
 	if( $file == false )
 	{
@@ -75,7 +81,6 @@ $filename=$this->auth + "/" $this->name + $this.uid;
 		"<auth>" + $this->auth + "</auth>" + 
 		"<layer>" + $this->layer + "</layer>" )
 	fclose( $file )
-*/
   }
   public readin($info){
 

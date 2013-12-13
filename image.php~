@@ -7,6 +7,15 @@ class image_reference{
   private $tags;
   private $auth;
   private $layer;
+  public __construct(){
+	  $this->name=rand(1000000, 9999999) + ".png";
+	  $this->img_src="charas/"+$this->name;
+	  $this->age=getdate();
+	  $this->uid=hash("md5",$this->name+$this->auth;$this->age,false);
+	  $this->tags[0]="#";
+	  $this->auth="anonymous";
+	  $this->layer=0;
+  }
   public __construct($list){
 	if($list('name')){
 		$this->name=$list("'name'");
@@ -76,7 +85,7 @@ $filename=$this->auth + "/" $this->name + $this.uid;
 		"<layer>" + $this->layer + "</layer>" )
 	fclose( $file )
 */
-  }http://www.php.net/manual/en/language.oop5.decon.php
+  }
   public readin($info){
 
   }
