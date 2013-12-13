@@ -65,7 +65,7 @@ class image_reference{
 	return $temp;
   }
   function writeout(){
-	$filename=$this->auth + "/" $this->name + $this.uid;
+	$filename = $this->auth + "/" + $this->name + $this.uid;
 	$file = fopen($filename);
 	if( $file == false )
 	{
@@ -80,7 +80,7 @@ class image_reference{
 		"<uid>" + $this->uid + "</uid>" + 
 		"<auth>" + $this->auth + "</auth>" + 
 		"<layer>" + $this->layer + "</layer>" )
-	fclose( $file )
+	fclose($file );
   }
   function readin($info){
 
