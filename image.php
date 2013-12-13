@@ -35,7 +35,7 @@ class image_reference{
 	if($list["uid"]){
 		$this->uid=$list["uid"];
 	}else{
-		$this->uid=hash["md5",$this->name+$this->auth+$this->age,false);
+		$this->uid=hash("md5",$this->name+$this->auth+$this->age,false);
 	}
 	if($list["tags"]){
 		$this->tags=$list["tags"];
