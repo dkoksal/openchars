@@ -6,6 +6,7 @@ function listing(location, name, age, auth, layer){
 	this.tags=new Array();
 	this.auth=auth;
 	this.uid= CryptoJS.MD5(this.name + this.auth + this.age);
+	console.log(this.uid);
 	this.layer=9;
 	console.log("loaded location information for" + this.name + this.location);
 };
@@ -31,7 +32,7 @@ listing.prototype.get_age = function(){ return this.age; }
 listing.prototype.set_auth = function(auth){ this.auth = auth; }
 listing.prototype.get_auth = function(){ return this.auth; }
 listing.prototype.submit = function(){
-	$.post("contrib.php",{name:this.name, age:this.age, tags:this.tags, auth:this.auth, layer:this.layer}).done( function(data){
+	$.post("contrib.php",{name:this.name, age:this.age, auth:this.auth, uid:this.uid, tags:this.tags, layer:this.layer}).done( function(data){
 		
 });
 }
