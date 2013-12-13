@@ -79,7 +79,7 @@ class image_reference{
 		"<tags>" + $this->writetags() + "</tags>" + 
 		"<uid>" + $this->uid + "</uid>" + 
 		"<auth>" + $this->auth + "</auth>" + 
-		"<layer>" + $this->layer + "</layer>" )
+		"<layer>" + $this->layer + "</layer>" );
 	fclose($file);
   }
   function readin($info){
