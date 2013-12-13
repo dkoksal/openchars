@@ -7,7 +7,7 @@ class image_reference{
   private $tags;
   private $auth;
   private $layer;
-  public __construct($list[]){
+  public __construct($list){
 	if($list['img_src']){
 		$this->img_src=$list['img_src'];
 	}
@@ -17,7 +17,7 @@ class image_reference{
 	if($list['age']){
 		$this->age=$list['age'];
 	}else{
-		$this->age=
+		$this->age=getdate();
 	}
 	if($list['tags']){
 		$this->tags=$list['tags'];
