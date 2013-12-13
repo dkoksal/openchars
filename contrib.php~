@@ -1,6 +1,5 @@
 <?php
 require "image.php"
-
 $list['name'] = $_POST('name');
 $list['age'] = $_POST('age');
 $list['tags'] = $_POST('tags');
