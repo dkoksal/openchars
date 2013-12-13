@@ -34,7 +34,13 @@ Might be fun to propose some social features. Lots of space for buttons in the n
          'Right of the full preview, a preview of the current picture on the current layer'  
          'Right of the layer preview, layer information(layer position, image metadata)'  
     -Contribute Menu: Designed to make it easy to contribute new assets to the site. It has a button for selecting a file from the local disk, fields for entering information about the image and selecting which category to place it on by default.  
-
+          
+         'File Browser'
+         'File Preview'
+         'Meta Name Entry'
+         'Meta Tags Entry'
+         'Meta Authorship entry'
+         'Confirm Upload'
  * Javascript/jQuery Components: The Javascript/jQuery components are the most important. I'm pretty sure I need to be binding functions to the HTML events above, but I need to get a clear picture of what I'm doing before I do this section.  
     -buttons.js: all the click event handlers for everything that qualifies as a "Button" in the application gathered into one place. Decorations and effects that apply to all "Button"s Intended solely to call functions located elsewhere in code.  
     -preview.js: all the functions necessary for generating an image preview and scaling the preview to an appropriate size.  
@@ -42,11 +48,17 @@ Might be fun to propose some social features. Lots of space for buttons in the n
          'Make Transparent'
          'Zoom Image'
     -getlist.js: pulls a list of images down off the server and stores them on the client.  
+
+         ''
     -contribute.js: contains functions for encapsulating and uploading user contributed content.  
 
+<<<<<<< HEAD
          'Image Listing Object, used to retrieve the cel image from the server without revealing the URL'
          'variables: listing.location, listing.name, listing.age, listing.tags, listing.auth, listing.layer'
          'getters: location, name, age(age-date), tag(searchterm), auth, layer'
+=======
+         'Image "listing" object'
+>>>>>>> 80b112c7f7db35b8cb76669d5a9a68eb4e4d1bc5
          'Advance file upload menu'
          'Advance metadata entry menu'
          'Advance confirmation menu and return to file upload menu'
