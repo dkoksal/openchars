@@ -1,5 +1,5 @@
 <?php
-require "image.php"
+require "image.php";
 $list = new array();
 $list['name'] = $_POST('name');
 $list['age'] = $_POST('age');
