@@ -24,8 +24,11 @@ listing.prototype.tag = function(tags){
 	}
 };
 listing.prototype.set_location = function(location){ this.location = location; };
+listing.prototype.get_location = function(){ return this.location; };
 listing.prototype.set_age = function(age){ this.age = age; }
+listing.prototype.get_age = function(){ return this.age; }
 listing.prototype.set_auth = function(auth){ this.auth = auth; }
+listing.prototype.get_auth = function(){ return this.auth; }
 listing.prototype.submit = function(){
 	$.post("contrib.php",{name:this.name, age:this.age, tags:this.tags, auth:this.auth, layer:this.layer}).done( function(data){
 });
@@ -44,9 +47,8 @@ $(document).ready(function(){
 });
 function advmeta(){
 	$("#loaddialog").addClass("hidden");
-	//l.set_name();
 	l.set_age(new Date());
-	$("#i_age").text(l.age);
+	$("#i_age").text(l.get_age);
 	$("#metadialog").removeClass("hidden");
 };
 function advconf(){
