@@ -17,7 +17,7 @@ class image_reference{
 	if($list['age']){
 		$this->age=$list['age'];
 	}else{
-		$this->age=
+		$this->age=getdate();
 	}
 	if($list['tags']){
 		$this->tags=$list['tags'];
@@ -43,14 +43,17 @@ class image_reference{
 	
   }
   private writetags(){
+/*
 	$temp = null;
 	for($i=0;i<count($this->tags);++$i){
 		$temp += "<t>" + $this->tags[i] + "</t>";
 	}
 	return $temp;
+*/
   }
   public writeout(){
-	$filename=$this->auth + "/" $this->name + $this.uid;
+/*	
+$filename=$this->auth + "/" $this->name + $this.uid;
 	$file = fopen($filename);
 	if( $file == false )
 	{
@@ -66,6 +69,7 @@ class image_reference{
 		"<auth>" + $this->auth + "</auth>" + 
 		"<layer>" + $this->layer + "</layer>" )
 	fclose( $file )
+*/
   }
   public readin($info){
 
