@@ -5,5 +5,6 @@ $list['age'] = $_POST('age');
 $list['tags'] = $_POST('tags');
 $list['auth'] = $_POST('auth');
 $list['layer'] = $_POST('layer');
-$newimage = new image_reference($_POST);
+$ltest = $_POST;
+$newimage = new image_reference($ltest);
 ?>
