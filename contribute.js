@@ -19,9 +19,7 @@ listing.prototype.render = function() {
 	this.update();
 };
 listing.prototype.tag = function(tags){
-	for(i=0;i<tags.length;++a){
-		this.tags[index]=tags[i];
-	}
+	this.tags = tags.split(', ');
 };
 listing.prototype.set_name = function(name){ this.name = name; };
 listing.prototype.get_name = function(){ return this.name; };
@@ -57,16 +55,20 @@ function advmeta(){
 function advconf(){
 	$("#metadialog").addClass("hidden");
 	l.set_name( $("#i_name" ).val() );
-	console.log(l.get_name());
+//	console.log(l.get_name());
 	 $("#c_name").text( l.get_name() );
+	l.tag( $("#i_tags" ).val() );
+//	console.log(l.tags);
+	 $("#c_tags").text( l.tags );
 	l.set_auth( $("#i_auth" ).val() );
-	console.log(l.get_auth());
+//	console.log(l.get_auth());
 	 $("#c_auth").text( l.get_auth() );
 
 	$("#confdialog").removeClass("hidden");
 };
 function advupld(){
 	$("#confdialog").addClass("hidden");
+	
 	$("#loaddialog").removeClass("hidden");
 };
 //@license-end
