@@ -37,7 +37,7 @@ listing.prototype.submit = function(){
 }
 var l = new listing();
 $(document).ready(function(){
-	$("#i_name").on("keydown", function() {
+	$("#i_name").on("keyup", function() {
 		
 	});
 	$("#i_tags").on("keydown", function() {
@@ -56,9 +56,11 @@ function advmeta(){
 };
 function advconf(){
 	$("#metadialog").addClass("hidden");
-	l.set_name( $("#i_name" ).text() );
+	l.set_name( $("#i_name" ).val() );
+	console.log(l.get_name());
 	 $("#c_name").text( l.get_name() );
-	l.set_auth( $("#i_auth" ).text() );
+	l.set_auth( $("#i_auth" ).val() );
+	console.log(l.get_auth());
 	 $("#c_auth").text( l.get_auth() );
 
 	$("#confdialog").removeClass("hidden");
