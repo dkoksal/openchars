@@ -35,7 +35,7 @@ class image_reference{
 	if($list["uid"]){
 		$this->uid=$list["uid"];
 	}else{
-		$this->uid=hash["md5",$this->name+$this->auth+$this->age,false);
+		$this->uid=hash("md5",$this->name+$this->auth+$this->age,false);
 	}
 	if($list["tags"]){
 		$this->tags=$list["tags"];
@@ -66,7 +66,7 @@ class image_reference{
   }
   function writeout(){
 	$filename = $this->auth + "/" + $this->name + $this.uid;
-	$file = fopen($filename);
+	$file = fopen($filename, "write");
 	if( $file == false )
 	{
 	   echo ( "Error in opening new file" );

@@ -66,7 +66,7 @@ class image_reference{
   }
   function writeout(){
 	$filename = $this->auth + "/" + $this->name + $this.uid;
-	$file = fopen($filename);
+	$file = fopen($filename, "w");
 	if( $file == false )
 	{
 	   echo ( "Error in opening new file" );
