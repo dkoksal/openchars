@@ -11,7 +11,7 @@ class image_reference{
 	  $this->name=rand(1000000, 9999999) + ".png";
 	  $this->img_src="charas/"+$this->name;
 	  $this->age=getdate();
-	  $this->uid=hash("md5",$this->name+$this->auth;$this->age,false);
+	  $this->uid=hash("md5",$this->name+$this->auth+$this->age,false);
 	  $this->tags[0]="#";
 	  $this->auth="anonymous";
 	  $this->layer=0;
@@ -35,7 +35,7 @@ class image_reference{
 	if($list('uid')){
 		$this->uid=$list('uid');
 	}else{
-		$this->uid=hash("md5",$this->name+$this->auth;$this->age,false);
+		$this->uid=hash("md5",$this->name+$this->auth+$this->age,false);
 	}
 	if($list('tags')){
 		$this->tags=$list('tags');
