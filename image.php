@@ -65,7 +65,7 @@ class image_reference{
 	return $temp;
   }
   function writeout(){
-	$filename=$this->auth + "/" $this->name + $this.uid;
+	$filename = $this->auth + "/" + $this->name + $this.uid;
 	$file = fopen($filename);
 	if( $file == false )
 	{
