@@ -9,9 +9,7 @@ I'm not great at separating the work in web development projects so I'm going to
 
  * PHP Components: The idea is to do very little on the server-side other than retrieve the image files for placement on the page and for saving files to the server. It's *just* handing the information to the client program to display.  
 
-    -Contribute Imgage(contrib.php)
-
-    -Image Objects(image.php)  
+    -Image Objects  
  * HTML/CSS Components: The basic page layout is a static HTML page with a CSS layout suitable for Desktop PC's at this time but with the potential for a Mobile layout.  
 
     -Current Menu: This span contains a menu which displays buttons which manipulate the current image for the current layer. Planned buttons are  
