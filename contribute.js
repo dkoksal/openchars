@@ -46,6 +46,7 @@ function advmeta(){
 	$("#loaddialog").addClass("hidden");
 	//l.set_name();
 	l.set_age(new Date());
+	$("#i_age").text(l.age);
 	$("#metadialog").removeClass("hidden");
 };
 function advconf(){
