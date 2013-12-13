@@ -2,9 +2,10 @@
 class image_reference{
   private $img_src;
   private $name;
-  private $creator;
+  private $age;
   private $uid;
   private $tags;
+  private $auth;
   private $layer;
   public __construct($list){
 	if($list['img_src']){
@@ -15,39 +16,59 @@ class image_reference{
 	}
 	if($list['age']){
 		$this->age=$list['age'];
+	}else{
+		$this->age=
 	}
 	if($list['tags']){
 		$this->tags=$list['tags'];
+	}else{
+		$this->tags[0]="#";
 	}
 	if($list['uid']){
 		$this->uid=$list['uid'];
 	}
-	if($list['tags']){
-		$this->tags=$list['tags'];
+	if($list['auth']){
+		$this->auth=$list['auth'];
+	}else{
+		$this->auth="anonymous";
 	}
 	if($list['layer']){
 		$this->layer=$list['layer'];
+	}else{
+		$this->layer=9;
 	}
+	$this->writeout();
   }
   public show(){
-    echo("<img src=\"" + $this->img_src + "\"" + "alt=\"" + $this->part +"," + $this->tags + "," + $this->creator + "\"");
+	
+  }
+  private writetags(){
+	$temp = null;
+	for($i=0;i<count($this->tags);++$i){
+		$temp += "<t>" + $this->tags[i] + "</t>";
+	}
+	return $temp;
   }
   public writeout(){
-    $siteversion=fopen("data/site/" + $this->part + ".xml", a+);
-    $sitesize=filesize("data/site/" + $this->part + ".xml");
-    $sitetext="<ref imgsrc='"+$this->img_src+"' bpart='"+ $this->part + "' uid='" + $this->uid + "' creator='" + $this->creator + "' taglist='" + $this->tags + " >";
-    fwrite($this->file1, text1);
-    $userversion=fopen("data/user/" + $this->part + ".xml", a+);
-    $usersize=filesize("data/user/" + $this->part + ".xml");
-    $usertext="<ref bpart='"+ $this->part + "' uid='" + $this->uid + "' taglist='" + $this->tags + " >";
-    fwrite($this->file2, text2);
+	$filename=$this->auth + "/" $this->name + $this.uid;
+	$file = fopen($filename);
+	if( $file == false )
+	{
+	   echo ( "Error in opening new file" );
+	   exit();
+	}
+	fwrite( $file, 
+		"<location>" + + "</location>" + 
+		"<name>" + $this->name + "</name>" + 
+		"<age>" + $this->age + "</age>" + 
+		"<tags>" + $this->writetags() + "</tags>" + 
+		"<uid>" + $this->uid + "</uid>" + 
+		"<auth>" + $this->auth + "</auth>" + 
+		"<layer>" + $this->layer + "</layer>" )
+	fclose( $file )
   }
   public readin($info){
-    $this->img_src = $info['img'];
-    $this->part = $info['part'];
-    $this->creator = $info['creator'];
-    $this->uid = $info['uid'];
-    $this->tags = $info['tags'];
+
   }
 }
 ?>
