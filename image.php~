@@ -18,7 +18,7 @@ class image_reference{
   } */
   function __construct($list){
 	if($list('name')){
-		$this->name=$list("'name'");
+		$this->name=$list('name');
 	}else{
 		$this->name=rand(1000000, 9999999) + ".png";
 	}
@@ -79,7 +79,7 @@ class image_reference{
 		"<tags>" + $this->writetags() + "</tags>" + 
 		"<uid>" + $this->uid + "</uid>" + 
 		"<auth>" + $this->auth + "</auth>" + 
-		"<layer>" + $this->layer + "</layer>" )
+		"<layer>" + $this->layer + "</layer>" );
 	fclose($file);
   }
   function readin($info){
