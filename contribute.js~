@@ -23,6 +23,8 @@ listing.prototype.tag = function(tags){
 		this.tags[index]=tags[i];
 	}
 };
+listing.prototype.set_name = function(name){ this.name = name; };
+listing.prototype.get_name = function(){ return this.name; };
 listing.prototype.set_location = function(location){ this.location = location; };
 listing.prototype.get_location = function(){ return this.location; };
 listing.prototype.set_age = function(age){ this.age = age; }
@@ -48,11 +50,17 @@ $(document).ready(function(){
 function advmeta(){
 	$("#loaddialog").addClass("hidden");
 	l.set_age(new Date());
-	$("#i_age").text(l.get_age);
+	$("#i_age").text(l.get_age());
+//	console.write(get_age());
 	$("#metadialog").removeClass("hidden");
 };
 function advconf(){
 	$("#metadialog").addClass("hidden");
+	l.set_name( $("#i_name" ).text() );
+	$("#c_name").text( l.get_name() );
+	l.set_auth( $("#i_auth" ).text() );
+	$("#c_auth").text( l.get_auth() );
+
 	$("#confdialog").removeClass("hidden");
 };
 function advupld(){
