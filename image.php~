@@ -14,7 +14,6 @@ class image_reference{
 	if($list['name']){
 		$this->name=$list['name'];
 	}
-	}
 	if($list['age']){
 		$this->age=$list['age'];
 	}else{
