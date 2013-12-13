@@ -8,31 +8,31 @@ class image_reference{
   private $auth;
   private $layer;
   public __construct($list){
-	if($list['img_src']){
+	if($list('img_src')){
 		$this->img_src=$list['img_src'];
 	}
-	if($list['name']){
+	if($list('name')){
 		$this->name=$list['name'];
 	}
-	if($list['age']){
+	if($list('age')){
 		$this->age=$list['age'];
 	}else{
 		$this->age=getdate();
 	}
-	if($list['tags']){
+	if($list('tags')){
 		$this->tags=$list['tags'];
 	}else{
 		$this->tags[0]="#";
 	}
-	if($list['uid']){
+	if($list('uid')){
 		$this->uid=$list['uid'];
 	}
-	if($list['auth']){
+	if($list('auth')){
 		$this->auth=$list['auth'];
 	}else{
 		$this->auth="anonymous";
 	}
-	if($list['layer']){
+	if($list('layer')){
 		$this->layer=$list['layer'];
 	}else{
 		$this->layer=9;
