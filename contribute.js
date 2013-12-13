@@ -31,20 +31,10 @@ listing.prototype.set_auth = function(auth){ this.auth = auth; }
 listing.prototype.get_auth = function(){ return this.auth; }
 listing.prototype.submit = function(){
 	$.post("contrib.php",{name:this.name, age:this.age, tags:this.tags, auth:this.auth, layer:this.layer}).done( function(data){
+		
 });
 }
 var l = new listing();
-$(document).ready(function(){
-	$("#i_name").on("keyup", function() {
-		
-	});
-	$("#i_tags").on("keydown", function() {
-		
-	});
-	$("#i_auth").on("keydown", function() {
-		
-	});
-});
 function advmeta(){
 	$("#loaddialog").addClass("hidden");
 	l.set_age(new Date());
@@ -68,7 +58,7 @@ function advconf(){
 };
 function advupld(){
 	$("#confdialog").addClass("hidden");
-	
+	l.submit();
 	$("#loaddialog").removeClass("hidden");
 };
 //@license-end
