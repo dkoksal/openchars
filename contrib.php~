@@ -1,19 +1,10 @@
 <?php
 require "image.php"
-$newimage = image_reference;
-if($_POST('name')){
 
-}
-if($_POST('age')){
-
-}
-if($_POST('tags')){
-
-}
-if($_POST('auth')){
-
-}
-if($_POST('layer')){
-
-}
+$list['name'] = $_POST('name');
+$list['age'] = $_POST('age');
+$list['tags'] = $_POST('tags');
+$list['auth'] = $_POST('auth');
+$list['layer'] = $_POST('layer');
+$newimage = new image_reference(list);
 ?>

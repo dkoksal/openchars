@@ -8,25 +8,25 @@ class image_reference{
   private $layer;
   public __construct($list){
 	if($list['img_src']){
-		$this->img_src=$list['img_src'];
+		$this->img_src;
 	}
 	if($list['name']){
-		$this->name=$list['name'];
+		$this->;
 	}
 	if($list['age']){
-		$this->age=$list['age'];
+		$this->;
 	}
 	if($list['tags']){
-		$this->tags=$list['tags'];
+		$this->;
 	}
 	if($list['uid']){
-		$this->uid=$list['uid'];
+		$this->;
 	}
 	if($list['tags']){
-		$this->tags=$list['tags'];
+		$this->;
 	}
 	if($list['layer']){
-		$this->layer=$list['layer'];
+		$this->;
 	}
   }
   public show(){
