@@ -34,7 +34,7 @@ listing.prototype.submit = function(){
 	$.post("contrib.php",{name:this.name, age:this.age, auth:this.auth, uid:this.uid, tags:this.tags, layer:this.layer}).done( function(data){
 		
 });
-}
+};
 var l = new listing();
 function advmeta(){
 	$("#loaddialog").addClass("hidden");
