@@ -64,12 +64,12 @@ class image_reference{
 	   exit();
 	}
 	fwrite( $file, "<location>" + $this->location + "</location>");
-	fwrite( $file, "<name>" + $this->name + "</name>");
-	fwrite( $file, "<age>" + $this->age + "</age>");
-	fwrite( $file, "<tags>" + $this->writetags() + "</tags>");
-	fwrite( $file, "<uid>" + $this->uid + "</uid>");
-	fwrite( $file, "<auth>" + $this->auth + "</auth>");
-	fwrite( $file, "<layer>" + $this->layer + "</layer>" );
+		"<name>" + $this->name + "</name>");
+		"<age>" + $this->age + "</age>");
+		"<tags>" + $this->writetags() + "</tags>");
+		"<uid>" + $this->uid + "</uid>");
+		"<auth>" + $this->auth + "</auth>");
+		"<layer>" + $this->layer + "</layer>" );
 	fclose($file);
   }
   function readin($info){
