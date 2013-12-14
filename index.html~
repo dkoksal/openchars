@@ -90,7 +90,7 @@
 <script src="libs/md5.js"></script>
 <script src="js/buttons.js"></script>
 <script src="js/contribute.js"></script>
-<!--<script src="js/getlist.js"></script>-->
+<!--<script src="getlist.js"></script>-->
 <link rel="stylesheet" type="text/css" href="style.css">
 </body>
 

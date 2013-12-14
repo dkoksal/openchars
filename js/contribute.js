@@ -7,7 +7,6 @@ function listing(location, name, age, auth, layer){
 	this.auth=auth;
 	this.uid=CryptoJS.MD5(this.name + this.auth + this.age);
 	this.layer=9;
-	console.log("loaded location information for" + this.name + this.location);
 };
 listing.prototype.update = function(){
 	$("#name").text(this.name);
@@ -35,7 +34,7 @@ listing.prototype.submit = function(){
 		
 });
 };
-var l = new listing();
+var l = new listing("0","0",Date(),"anonymous",9);
 function advmeta(){
 	$("#loaddialog").addClass("hidden");
 	l.set_age(new Date());
