@@ -1,11 +1,11 @@
 //@license magnet:?xt=urn:btih:0b31508aeb0634b347b8270c7bee4d411b5d4109&dn=agpl-3.0.txt AGPL-V3-or-later
 function listing() {
-    this.name = CryptoJS.MD5((Math.floor((Math.random()*9999999) + 1000000)) + new Date());
-    this.age = new Date();
+    this.age = new Date(); var t; t = ((Math.floor((Math.random()*9999999) + 1000000)).toString() + this.age).toString();
+    this.name = CryptoJS.MD5(t); t = 0;
     this.tags = ["#"];
     this.auth = "ano";
-    this.location = this.auth+"/"+this.name;
-    this.uid = CryptoJS.MD5(this.name + this.auth + this.age);
+    this.location = this.auth+"/"+this.name; t = (this.name + this.auth + this.age).toString();
+    this.uid = CryptoJS.MD5(t);
     this.layer = 9;
 };
 listing.prototype.update = function(){
@@ -50,31 +50,31 @@ listing.prototype.submit = function(){
         
 });
 };
-var l = new listing();
+var ContributeObject = new listing();
 function advmeta(){
     $("#loaddialog").addClass("hidden");
-    l.set_age(new Date());
-    $("#i_age").text(l.get_age());
+    ContributeObject.set_age(new Date());
+    $("#i_age").text(ContributeObject.get_age());
 //    console.write(get_age());
     $("#metadialog").removeClass("hidden");
 };
 function advconf(){
     $("#metadialog").addClass("hidden");
-    l.set_name( $("#i_name" ).val() );
-//    console.log(l.get_name());
-     $("#c_name").text( l.get_name() );
-    l.tag( $("#i_tags" ).val() );
-//    console.log(l.tags);
-     $("#c_tags").text( l.tags );
-    l.set_auth( $("#i_auth" ).val() );
-//    console.log(l.get_auth());
-     $("#c_auth").text( l.get_auth() );
+    ContributeObject.set_name( $("#i_name" ).val() );
+//    console.log(ContributeObject.get_name());
+     $("#c_name").text( ContributeObject.get_name() );
+    ContributeObject.tag( $("#i_tags" ).val() );
+//    console.log(ContributeObject.tags);
+     $("#c_tags").text( ContributeObject.tags );
+    ContributeObject.set_auth( $("#i_auth" ).val() );
+//    console.log(ContributeObject.get_auth());
+     $("#c_auth").text( ContributeObject.get_auth() );
 
     $("#confdialog").removeClass("hidden");
 };
 function advupld(){
     $("#confdialog").addClass("hidden");
-    l.submit();
+    ContributeObject.submit();
     $("#loaddialog").removeClass("hidden");
 };
 //@license-end
