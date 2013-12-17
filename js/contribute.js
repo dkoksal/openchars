@@ -48,6 +48,12 @@ imageListing.prototype.set_auth = function(auth){
 imageListing.prototype.get_auth = function(){ 
     return this.auth; 
 };
+imageListing.prototype.set_license = function(license){ 
+    this.license = license; 
+};
+imageListing.prototype.get_license = function(){ 
+    return this.license; 
+};
 imageListing.prototype.get_uid = function(){ 
     return this.uid.toString(); 
 };
@@ -68,15 +74,13 @@ function advmeta(){
 function advconf(){
     $("#metadialog").addClass("hidden");
     ContributeObject.set_name( $("#i_name" ).val() );
-//    console.log(ContributeObject.get_name());
      $("#c_name").text( ContributeObject.get_name() );
     ContributeObject.tag( $("#i_tags" ).val() );
-//    console.log(ContributeObject.tags);
      $("#c_tags").text( ContributeObject.tags );
     ContributeObject.set_auth( $("#i_auth" ).val() );
-//    console.log(ContributeObject.get_auth());
      $("#c_auth").text( ContributeObject.get_auth() );
-
+    ContributeObject.set_license( $("#i_lice").val() );
+     $("#c_lice").text( ContributeObject.get_license() );
     $("#confdialog").removeClass("hidden");
 };
 function advupld(){
