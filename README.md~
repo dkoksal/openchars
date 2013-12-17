@@ -18,9 +18,9 @@ I'm not great at separating the work in web development projects so I'm going to
          '$name is the descriptive name of the image'
          '$age is the date the image was added to the directory'
          '$uid is the unique ID of the image refered to by the instance'
-         '$license references the terms under which the image is released'
-         '$auth is the author of the image'
-         '$layer is the default layer upon which the image appears'
+         '$license references the'
+         '$auth'
+         '$layer'
  * HTML/CSS Components: The basic page layout is a static HTML page with a CSS layout suitable for Desktop PC's at this time but with the potential for a Mobile layout.  
 
     -Current Menu: This span contains a menu which displays buttons which manipulate the current image for the current layer. Planned buttons are  

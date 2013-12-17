@@ -32,7 +32,7 @@ class image_reference{
 	if($list['license']){
 		$this->license=$list['license'];
 	}else{
-		$this->license="License Not Provided";
+		
 	}
 	if($list["tags"]){
 		$this->tags=$list["tags"];
