@@ -11,7 +11,7 @@ I'm not great at separating the work in web development projects so I'm going to
 
     -Contribute Image(contrib.php)  
 
-         ''
+         'instantiate a new image reference, fill it, and push it into the appropriate list'
     -Image Objects(image.php)The image object contains definitions associated with retrieving or changing the content of a single image.  
 
          '$img_src is the directory location of the image on the server.'

@@ -8,14 +8,24 @@ class gallery_stack{
 	$other;
   function __constuct($list){
 	if($list["figuresurl"]){
+	}else{
+		$this->figures=new image_list($blank);
 	}
 	if($list["headurl"]){
+	}else{
+		$this->figures=new image_list($blank);
 	}
 	if($list["clothesurl"]){
+	}else{
+		$this->figures=new image_list($blank);
 	}
 	if($list["shoessurl"]){
+	}else{
+		$this->figures=new image_list($blank);
 	}
 	if($list["otherurl"]){
+	}else{
+		$this->figures=new image_list($blank);
 	}
   }
 }

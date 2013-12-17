@@ -5,7 +5,7 @@ function imageListing() {
     this.name = t; t = 0;
     console.log(this.name);
     this.tags = ["#"];
-    this.license = "no license provided";
+    this.license = "No license provided";
     this.auth = "ano";
     this.location = this.auth+"/"+this.name+".png"; t = (this.name + this.auth + this.age).toString();
     this.uid = CryptoJS.MD5(t);
@@ -52,7 +52,7 @@ imageListing.prototype.get_uid = function(){
     return this.uid.toString(); 
 };
 imageListing.prototype.submit = function(){
-    $.post("contrib.php",{name:this.get_name(), age:this.get_age(), auth:this.get_auth(), uid:this.get_uid(), tags:this.tags, layer:this.layer})
+    $.post("contrib.php",{name:this.get_name(), age:this.get_age(), auth:this.get_auth(), uid:this.get_uid(), license:this.license, tags:this.tags, layer:this.layer})
      .done( function(data){
         
      });
