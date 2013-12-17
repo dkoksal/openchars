@@ -45,6 +45,7 @@ Might be fun to propose some social features. Lots of space for buttons in the n
     -buttons.js: all the click event handlers for everything that qualifies as a "Button" in the application gathered into one place. Decorations and effects that apply to all "Button"s Intended solely to call functions located elsewhere in code.  
     -preview.js: all the functions necessary for generating an image preview and scaling the preview to an appropriate size.  
 
+         'Update Preview'
          'Make Transparent'
          'Zoom Image'
     -getlist.js: pulls a list of images down off the server and stores them on the client.  
