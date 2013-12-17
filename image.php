@@ -32,7 +32,7 @@ class image_reference{
 	if($list['license']){
 		$this->license=$list['license'];
 	}else{
-		$this->license="License Not Provided";
+		$this->license="License not provided";
 	}
 	if($list["tags"]){
 		$this->tags=$list["tags"];
@@ -71,6 +71,7 @@ class image_reference{
 	fwrite( $file, "<location>" + $this->location + "</location>");
 	fwrite( $file, "<name>" + $this->name + "</name>");
 	fwrite( $file, "<age>" + $this->age + "</age>");
+	fwrite( $file, "<license>" + $this->license + "</license>");
 	fwrite( $file, "<tags>" + $this->writetags() + "</tags>");
 	fwrite( $file, "<uid>" + $this->uid + "</uid>");
 	fwrite( $file, "<auth>" + $this->auth + "</auth>");

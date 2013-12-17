@@ -31,7 +31,7 @@ I'm not great at separating the work in web development projects so I'm going to
          'Switch displayed picture to previous in category'  
          'move layer back one level(behind other pictures)'  
          'move layer forward one level(in front of other pictures)'  
-         'sort by license'
+         'sort by license - Not implemented yet'
          'apply filter to layer'  
          'save image as...'  
 Might be fun to propose some social features. Lots of space for buttons in the new cleaner layout.  

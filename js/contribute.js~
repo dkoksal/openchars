@@ -5,6 +5,7 @@ function imageListing() {
     this.name = t; t = 0;
     console.log(this.name);
     this.tags = ["#"];
+    this.license = "no license provided";
     this.auth = "ano";
     this.location = this.auth+"/"+this.name+".png"; t = (this.name + this.auth + this.age).toString();
     this.uid = CryptoJS.MD5(t);
