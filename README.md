@@ -22,6 +22,7 @@ I'm not great at separating the work in web development projects so I'm going to
          'Switch displayed picture to previous in category'  
          'move layer back one level(behind other pictures)'  
          'move layer forward one level(in front of other pictures)'  
+         'sort by license'
          'apply filter to layer'  
          'save image as...'  
 Might be fun to propose some social features. Lots of space for buttons in the new cleaner layout.  
@@ -35,12 +36,13 @@ Might be fun to propose some social features. Lots of space for buttons in the n
          'Right of the layer preview, layer information(layer position, image metadata)'  
     -Contribute Menu: Designed to make it easy to contribute new assets to the site. It has a button for selecting a file from the local disk, fields for entering information about the image and selecting which category to place it on by default.  
           
-         'File Browser'
-         'File Preview'
-         'Meta Name Entry'
-         'Meta Tags Entry'
-         'Meta Authorship entry'
-         'Confirm Upload'
+         'File Browser- Not implemented yet'
+         'File Preview changes the sprite preview to include the new image without uploading'
+         'Meta Name Entry input textbox for a descriptive name for the image'
+         'Meta Tags Entry input textbox takes a comma delimited list of tags describing the image'
+         'Meta License Entry- Not Implemented yet'
+         'Meta Authorship entry for image creators to take credit for their own work'
+         'Confirm Upload button posts the new image and accompanying metadata to the server where it is saved. '
  * Javascript/jQuery Components: The Javascript/jQuery components are the most important. I'm pretty sure I need to be binding functions to the HTML events above, but I need to get a clear picture of what I'm doing before I do this section.  
     -buttons.js: all the click event handlers for everything that qualifies as a "Button" in the application gathered into one place. Decorations and effects that apply to all "Button"s Intended solely to call functions located elsewhere in code.  
     -preview.js: all the functions necessary for generating an image preview and scaling the preview to an appropriate size.  
