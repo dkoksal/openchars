@@ -27,7 +27,7 @@ imageListing.prototype.set_name = function(name){
     this.name = name; 
 };
 imageListing.prototype.get_name = function(){ 
-    return this.name; 
+    return this.name.toString() + ".png"; 
 };
 imageListing.prototype.set_location = function(location){ 
     this.location = location; 
@@ -47,8 +47,11 @@ imageListing.prototype.set_auth = function(auth){
 imageListing.prototype.get_auth = function(){ 
     return this.auth; 
 };
+imageListing.prototype.get_uid = function(){ 
+    return this.uid.toString(); 
+};
 imageListing.prototype.submit = function(){
-    $.post("contrib.php",{name:this.name, age:this.age, auth:this.auth, uid:this.uid, tags:this.tags, layer:this.layer})
+    $.post("contrib.php",{name:this.get_name(), age:this.get_age(), auth:this.get_auth(), uid:this.get_uid(), tags:this.tags, layer:this.layer})
      .done( function(data){
         
      });

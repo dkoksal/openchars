@@ -43,7 +43,7 @@ class image_reference{
 	}else{
 		$this->img_src=$this->auth+"/"+$this->name;
 	}
-	//$this->writeout();
+	$this->writeout();
   }
   function show(){
 	                                                     

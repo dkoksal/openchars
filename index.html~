@@ -64,6 +64,8 @@
 				<span id="tagslabel">Tags: </span><input type="text" id="i_tags"></input><br>
 				<span id="authlabel">Author: </span><input type="text" id="i_auth"></input><br>
 			</span>
+			<span id="preview" class="picture">Preview:
+				<img src="images/figures/MaleModel_01.png"></img></span>
 			<span id="advancetoconfirm" class="button">Next: Confirm Upload</span>
 		</span></center>
 		<center><span id="confdialog" class="hidden dialog">
@@ -76,6 +78,8 @@
 				<span id="authlabel">Author: </span><span id="c_auth">Authorship</span><br>
 				</left>
 			</span>
+			<span id="preview" class="picture">Preview:
+				<img src="images/figures/MaleModel_01.png"></img></span>
 			<span id="advancetoupload" class="button">Upload your content</span>
 		</span></center>
 	</span>
