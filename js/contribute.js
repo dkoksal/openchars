@@ -61,9 +61,9 @@ imageListing.prototype.submit = function(){
     $.post("contrib.php",{name:this.get_name(), age:this.get_age(), auth:this.get_auth(), uid:this.get_uid(), license:this.license, tags:this.tags, layer:this.layer})
      .done( function(data){
         alert(data);
-     });
+     })
      .fail( function(data) {
-	alert( "error" );
+	alert( data );
      });
 };
 var ContributeObject = new imageListing();
