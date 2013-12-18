@@ -65,7 +65,7 @@ imageListing.prototype.submit = function(){
      .fail( function(data) {
 	alert( data );
      })
-     .fail( function(){
+     .fail( function()
 	alert("error");
      });
 };
