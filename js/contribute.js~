@@ -79,7 +79,7 @@ function advconf(){
      $("#c_tags").text( ContributeObject.tags );
     ContributeObject.set_auth( $("#i_auth" ).val() );
      $("#c_auth").text( ContributeObject.get_auth() );
-    ContributeObject.set_license( $("i_lice").val() );
+    ContributeObject.set_license( $("#i_lice").val() );
      $("#c_lice").text( ContributeObject.get_license() );
     $("#confdialog").removeClass("hidden");
 };

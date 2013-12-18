@@ -87,7 +87,7 @@
 <script type="text/javascript" src="js/buttons.js"></script>
 <script type="text/javascript" src="js/contribute.js"></script>
 <script type="text/javascript" src="js/preview.js"></script>
-<script type="text/javascript" src="js/getlist.js"></script>
+<!--<script type="text/javascript" src="js/getlist.js"></script>-->
 <link rel="stylesheet" type="text/css" href="style.css">
 </body>
 

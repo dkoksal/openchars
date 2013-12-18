@@ -7,6 +7,7 @@ function list(location, name){
 };
 list.prototype.append = function(location, name, age, auth, layer) {
 	this.cache[this.cache.length+1]=new imageListing(location, name, age, auth, layer);
+	console.log(this.cache.length+1);
 };
 list.prototype.render = function(){
 	this.cache[index].render();
