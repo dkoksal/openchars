@@ -62,6 +62,9 @@ imageListing.prototype.submit = function(){
      .done( function(data){
         alert(data);
      });
+     .fail( function(data) {
+	alert( "error" );
+     });
 };
 var ContributeObject = new imageListing();
 function advmeta(){
