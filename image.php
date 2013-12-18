@@ -49,7 +49,6 @@ class image_reference{
 	}else{
 		$this->img_src=$this->auth+"/"+$this->name;
 	}
-	$this->writeout();
   }
   function show(){
 	                                                     
@@ -67,19 +66,19 @@ class image_reference{
 	}
 	$filename = $this->auth + "/" + $this->name + ".xml";
 	$file = fopen($filename, "w");
-	//if( $file == false ){
-	//   echo ( "Error in opening new file" );
-	//   exit();
-	//}
-	$temp = "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\" ?>" +
-	"<location>" + $this->location + "</location>" +
-	"<name>" + $this->name + "</name>" +
-	"<age>" + $this->age + "</age>" +
-	"<license>" + $this->license + "</license>" +
-	"<tags>" + $this->writetags() + "</tags>" +
-	"<uid>" + $this->uid + "</uid>" +
-	"<auth>" + $this->auth + "</auth>" +
-	"<layer>" + $this->layer + "</layer>";
+	if( $file == false ){
+	   echo ( "Error in opening new file" );
+	   exit();
+	}
+	$temp = "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\" ?>";
+	$temp += "<location>" + $this->location + "</location>";
+	$temp += "<name>" + $this->name + "</name>";
+	$temp += "<age>" + $this->age + "</age>";
+	$temp += "<license>" + $this->license + "</license>";
+	$temp += "<tags>" + $this->writetags() + "</tags>";
+	$temp += "<uid>" + $this->uid + "</uid>";
+	$temp += "<auth>" + $this->auth + "</auth>";
+	$temp += "<layer>" + $this->layer + "</layer>";
 	fwrite( $file, $temp);
 	fclose($file);
   }
