@@ -67,19 +67,20 @@ class image_reference{
 	}
 	$filename = $this->auth + "/" + $this->name + ".xml";
 	$file = fopen($filename, "w");
-	if( $file == false ){
-	   echo ( "Error in opening new file" );
-	   exit();
-	}
-	fwrite( $file, "'.<?xml version="1.0" encoding="UTF-8" standalone="no" ?>.'" );
-	fwrite( $file, "<location>" + $this->location + "</location>");
-	fwrite( $file, "<name>" + $this->name + "</name>");
-	fwrite( $file, "<age>" + $this->age + "</age>");
-	fwrite( $file, "<license>" + $this->license + "</license>");
-	fwrite( $file, "<tags>" + $this->writetags() + "</tags>");
-	fwrite( $file, "<uid>" + $this->uid + "</uid>");
-	fwrite( $file, "<auth>" + $this->auth + "</auth>");
-	fwrite( $file, "<layer>" + $this->layer + "</layer>" );
+	//if( $file == false ){
+	//   echo ( "Error in opening new file" );
+	//   exit();
+	//}
+	$temp = "'.<?xml version="1.0" encoding="UTF-8" standalone="no" ?>.'" +
+	"<location>" + $this->location + "</location>" +
+	"<name>" + $this->name + "</name>" +
+	"<age>" + $this->age + "</age>" +
+	"<license>" + $this->license + "</license>" +
+	"<tags>" + $this->writetags() + "</tags>" +
+	"<uid>" + $this->uid + "</uid>" +
+	"<auth>" + $this->auth + "</auth>" +
+	"<layer>" + $this->layer + "</layer>";
+	fwrite( $file, $temp);
 	fclose($file);
   }
   function readin($info){
