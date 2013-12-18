@@ -67,10 +67,10 @@ class image_reference{
 	}
 	$filename = $this->auth + "/" + $this->name + ".xml";
 	$file = fopen($filename, "w");
-	if( $file == false ){
-	   echo ( "Error in opening new file" );
-	   exit();
-	}
+	//if( $file == false ){
+	//   echo ( "Error in opening new file" );
+	//   exit();
+	//}
 	$temp = "'.<?xml version="1.0" encoding="UTF-8" standalone="no" ?>.'" +
 	"<location>" + $this->location + "</location>" +
 	"<name>" + $this->name + "</name>" +

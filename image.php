@@ -71,7 +71,7 @@ class image_reference{
 	//   echo ( "Error in opening new file" );
 	//   exit();
 	//}
-	$temp = "'.<?xml version="1.0" encoding="UTF-8" standalone="no" ?>.'" +
+	$temp = "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\" ?>" +
 	"<location>" + $this->location + "</location>" +
 	"<name>" + $this->name + "</name>" +
 	"<age>" + $this->age + "</age>" +
