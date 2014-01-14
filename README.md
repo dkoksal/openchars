@@ -3,7 +3,7 @@ openchars
 
 Openchars(Working name) is a tool for archiving, accessing, and viewing what hopefully will be a vast collection of 2d cel animations for use in RPG maker type games.  
 
-*A note on the new directory structure, the current artwork in the "free" repository is the work of Mr. Andrew Friend, who has for the time being given me authority to license that particular set of work. I have decided to license it under Creative Commons 4.0 Share-Alike Attribution License, the terms of which are available here 
+*A* note on the new directory structure, the current artwork in the "free" repository is the work of Mr. Andrew Friend, who has for the time being given me authority to license that particular set of work. I have decided to license it under Creative Commons 4.0 Share-Alike Attribution License, the terms of which are available here 
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
 
 Basic Elements
