@@ -3,12 +3,15 @@ openchars
 
 Openchars(Working name) is a tool for archiving, accessing, and viewing what hopefully will be a vast collection of 2d cel animations for use in RPG maker type games.  
 
+*A note on the new directory structure, the current artwork in the "free" repository is the work of Mr. Andrew Friend, who has for the time being given me authority to license that particular set of work. I have decided to license it under Creative Commons 4.0 Share-Alike Attribution License, the terms of which are available here 
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+
 Basic Elements
 ---------
 
     -Character Cel Menu: This is where semi-transparent images(Cels) are laid across eachother to produce a final image of a character and where the buttons required to manipulate the Cels are exposed to the user.  
     
-    -Upload Menu: This is where new art is contributed. Each piece of art has some required metadata, being it's Name, Category, Author, and License, as well as optional tags to provide further information. Name, Category, Author, and License are all also treated as if they are tags.  
+    -Upload Menu: This is where new art is contributed. Each piece of art has some required metadata, being it's Name, Category, Author, and License, as well as optional tags to provide further information. Name, Category, Author, and License are all also treated as if they are tags. Based on license, the images are uploaded to either main(Free and Modifiable under clear, recognized licenses), contrib(Available under partly restricted licenses or personal licenses which require further review), or non-free(Available under only proprietary terms, please contact the author for permission to use), in a manner intended to be similar to Debian policy.  
     
     -Fine Tuning Menu: This is where the currently selected Cel can be adjusted. Currently the only fine adjustment planned is the ability to force a Cel to appear on a nonstandard layer but more will be added as the case varies.  
     
