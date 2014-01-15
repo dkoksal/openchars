@@ -8,6 +8,7 @@ Openchars(Working name) is a tool for archiving, accessing, and viewing what hop
 
 Basic Elements
 ---------
+;
 
     -Character Cel Menu: This is where semi-transparent images(Cels) are laid across eachother to produce a final image of a character and where the buttons required to manipulate the Cels are exposed to the user.  
     
