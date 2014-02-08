@@ -10,7 +10,7 @@ html{
 body{
 	height:100%;
 }
-div {
+span {
 	
 	border:2px solid;
 	border-radius:2px;

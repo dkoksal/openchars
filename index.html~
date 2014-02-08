@@ -89,7 +89,7 @@
 				<div id="namelabel2">Name: </div>		<div id="c_name">Name of the image</div></br>
 				<div id="tagslabel2">Tags: </div>		<div id="c_tags">Tags about the image</div></br>
 				<div id="authlabel2">Author: </div>		<div id="c_auth">Authorship</div></br>
-				<div id="liclabel">License: </div>		<div id="c_lice">License</div></br>
+				<div id="liclabel">License: </div>		<div id="c_auth">Authorship</div></br>
 			</div>
 			<div id="advancetoupload" class="button">Upload your content</div>
 		</div>

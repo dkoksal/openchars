@@ -1,0 +1,165 @@
+line 39 column 97 - Warning: discarding unexpected </img>
+line 42 column 110 - Warning: discarding unexpected </img>
+line 51 column 21 - Warning: <center> isn't allowed in <h2> elements
+line 51 column 17 - Info: <h2> previously mentioned
+line 51 column 42 - Warning: discarding unexpected </center>
+line 58 column 17 - Warning: replacing unexpected h5 by </h5>
+line 66 column 120 - Warning: discarding unexpected </input>
+line 68 column 120 - Warning: discarding unexpected </input>
+line 69 column 112 - Warning: discarding unexpected </input>
+line 70 column 104 - Warning: discarding unexpected </input>
+line 103 column 1 - Warning: <link> isn't allowed in <body> elements
+line 6 column 1 - Info: <body> previously mentioned
+line 66 column 33 - Warning: <div> anchor "namelabel" already defined
+line 68 column 33 - Warning: <div> anchor "tagslabel" already defined
+line 69 column 33 - Warning: <div> anchor "authlabel" already defined
+line 78 column 33 - Warning: <div> anchor "namelabel" already defined
+line 79 column 33 - Warning: <div> anchor "tagslabel" already defined
+line 80 column 33 - Warning: <div> anchor "authlabel" already defined
+Info: Document content looks like HTML 4.01 Transitional
+Info: No system identifier in emitted doctype
+16 warnings, 0 errors were found!
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta name="generator" content=
+"HTML Tidy for Linux (vers 25 March 2009), see www.w3.org">
+<title>Openchars Prototype</title>
+<meta http-equiv="content-type" content=
+"text/html; charset=us-ascii">
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div id="page">
+<h1>Openchars Prototype</h1>
+<div id="curmenu" class="menu">
+<h2>Edit Menu</h2>
+Select an image<br>
+<div id="previmg" class="button">&lt;&lt;</div>
+<div id="curimg" class="label">CurImg</div>
+<div id="nextimg" class="button">&gt;&gt;</div>
+<br>
+Select a category:<br>
+<div id="upcat" class="button">^^</div>
+<div id="curcat" class="label">CurCat</div>
+<div id="downcat" class="button">vv</div>
+<br>
+Misc:<br>
+<div id="filter" class="button">Filter</div>
+<div id="saveas" class="button">Save As</div>
+</div>
+<!--</div>-->
+<div id="spimage" class="info">
+<h2>This div contains the sprite image itself</h2>
+<br>
+<div class="slidewheel"><strong>Thumbnails</strong><br>
+<div class="thumb">xxxx</div>
+<div class="thumb">xxxx</div>
+<div class="thumb">xxxx</div>
+<div class="thumb">xxxx</div>
+<div class="thumb">xxxx</div>
+<div class="thumb">xxxx</div>
+<div class="thumb">xxxx</div>
+<div class="thumb">xxxx</div>
+<div class="thumb">xxxx</div>
+</div>
+<br>
+<br>
+<div class="preview thumb"><img id="pwimg" src=
+"images/main/figures/HumanMale_01.png" alt="sprite" name=
+"pwimg"></div>
+<div class="preview thumb"><img id="csimg" src=
+"images/main/Pants/GldPlatePantsMale_01.png" alt="layer" name=
+"csimg"></div>
+<div id="csinfo" class="preview">
+<div id="namelabel">Name:</div>
+<div id="name"></div>
+<br>
+<div id="tagslabel">Tags:</div>
+<div id="tags"></div>
+<br>
+<div id="authlabel">Author:</div>
+<div id="auth"></div>
+<br></div>
+</div>
+<div id="laymenu" class="menu">
+<center>
+<h2>Layering Menu</h2>
+</center>
+Fine-Tune Layers:<br>
+<div id="uplayer" class="button">^^</div>
+<div id="curlay" class="label">Layer</div>
+<div id="downlayer" class="button">vv</div>
+</div>
+<div id="contrib" class="menu">
+<h5>Contribute a new image to the collection:</h5>
+<div id="loaddialog" class="dialog">
+<div id="filemenu">Select an image from your computer:<br>
+Javascript loader not available</div>
+<div id="advancetometa" class="button">Next: Enter Metadata</div>
+</div>
+<div id="metadialog" class="hidden dialog">Input information about
+your content:<br>
+<div id="metamenu">Meta Information:<br>
+<div id="namelabel">Name:</div>
+<input type="text" id="i_name"><br>
+<div id="agelabel">Age:</div>
+<div id="i_age"></div>
+<br>
+<div id="tagslabel">Tags:</div>
+<input type="text" id="i_tags"><br>
+<div id="authlabel">Author:</div>
+<input type="text" id="i_auth"><br>
+<div id="licenselabel">License:</div>
+<input type="text" id="i_lice"><br></div>
+<div id="advancetoconfirm" class="button">Next: Confirm
+Upload</div>
+</div>
+<div id="confdialog" class="hidden dialog">Confirm your upload<br>
+<div id="confmenu">
+<div id="loclabel">Location:</div>
+<div id="loc">Location of the file</div>
+<br>
+<div id="namelabel">Name:</div>
+<div id="c_name">Name of the image</div>
+<br>
+<div id="tagslabel">Tags:</div>
+<div id="c_tags">Tags about the image</div>
+<br>
+<div id="authlabel">Author:</div>
+<div id="c_auth">Authorship</div>
+<br>
+<div id="liclabel">License:</div>
+<select id="c_lice" name="license">
+<option value="CCASA">Creative Commons Share-Alike
+Attribution</option>
+<option value="CCA">Creative Commons Attribution</option>
+<option value="GPL3">GNU General Public License v.3</option>
+<option value="LGPL3">GNU Lesser General Public License
+v.3</option>
+<option value="GFDL3">GNU Free Documentation Licens v.3</option>
+<option value="GPL2">GNU General Public License v.2</option>
+<option value="LGPL2">GNU Lesser General Public License
+v.2</option>
+<option value="GFDL2">GNU Free Documentation Licens v.2</option>
+</select></div>
+<div id="advancetoupload" class="button">Upload your content</div>
+</div>
+</div>
+</div>
+<script type="text/javascript" src="libs/jquery-2.0.3.js">
+</script><script type="text/javascript" src="libs/md5.js">
+</script><script type="text/javascript" src="js/buttons.js">
+</script><script type="text/javascript" src="js/contribute.js">
+</script><script type="text/javascript" src="js/preview.js">
+</script><script type="text/javascript" src="js/getlist.js">
+</script>
+</body>
+</html>
+
+To learn more about HTML Tidy see http://tidy.sourceforge.net
+Please fill bug reports and queries using the "tracker" on the Tidy web site.
+Additionally, questions can be sent to html-tidy@w3.org
+HTML and CSS specifications are available from http://www.w3.org/
+Lobby your company to join W3C, see http://www.w3.org/Consortium
