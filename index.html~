@@ -42,7 +42,7 @@
 			<div class="preview thumb">
 				<img id="csimg" src="images/main/Pants/GldPlatePantsMale_01.png" alt="layer">
 			</div>
-			<div id="csinfo" class="preview">
+			<div class="preview thumb">
 				<div id="namelabel">Name:</div>		<div id="name"></div></br>
 				<div id="tagslabel">Tags:</div>		<div id="tags"></div></br>
 				<div id="authlabel">Author:</div>		<div id="auth"></div></br>
@@ -69,7 +69,7 @@
 				<div id="tagsinput">Tags: </div>			<input type="text" id="i_tags"></br>
 				<div id="authinput">Author: </div>		<input type="text" id="i_auth"></br>
 				<div id="licenseinput">License: </div>	
-				<select id="c_lice" name="license">
+				<select id="i_lice" name="license">
 					<option value="CCASA">Creative Commons Share-Alike Attribution</option>
 					<option value="CCA">Creative Commons Attribution</option>
 					<option value="GPL3">GNU General Public License v.3</option>
@@ -89,7 +89,7 @@
 				<div id="namelabel2">Name: </div>		<div id="c_name">Name of the image</div></br>
 				<div id="tagslabel2">Tags: </div>		<div id="c_tags">Tags about the image</div></br>
 				<div id="authlabel2">Author: </div>		<div id="c_auth">Authorship</div></br>
-				<div id="liclabel">License: </div>		<div id="c_auth">Authorship</div></br>
+				<div id="liclabel">License: </div>		<div id="c_lice">License</div></br>
 			</div>
 			<div id="advancetoupload" class="button">Upload your content</div>
 		</div>

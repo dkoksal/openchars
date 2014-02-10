@@ -97,6 +97,9 @@ h1{
 	background:grey;
 	height:90%;
 }
+.page{
+	padding: 10%;
+}
 .preview{
 	border: thick;
 	background:white;

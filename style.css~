@@ -10,7 +10,7 @@ html{
 body{
 	height:100%;
 }
-span {
+div {
 	
 	border:2px solid;
 	border-radius:2px;
@@ -83,7 +83,8 @@ h1{
 }
 .thumb{
 	text-align:center;
-	border: thick;
+	border: 3px;
+	padding: 10%;
 }
 .label{
 	background:white;
@@ -96,6 +97,9 @@ h1{
 .menu{
 	background:grey;
 	height:90%;
+}
+.page{
+	padding: 10%;
 }
 .preview{
 	border: thick;

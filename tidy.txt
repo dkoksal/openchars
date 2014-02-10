@@ -54,7 +54,7 @@ Misc:<br>
 <div class="preview thumb"><img id="csimg" src=
 "images/main/Pants/GldPlatePantsMale_01.png" alt="layer" name=
 "csimg"></div>
-<div id="csinfo" class="preview">
+<div class="preview thumb">
 <div id="namelabel">Name:</div>
 <div id="name"></div>
 <br>
@@ -83,7 +83,7 @@ Javascript loader not available</div>
 your content:<br>
 <div id="metamenu">Meta Information:<br>
 <div id="nameinput">Name:</div>
-<input type="text" id="i_name">/br&gt;
+<input type="text" id="i_name"><br>
 <div id="ageinput">Age:</div>
 <div id="i_age"></div>
 <br>
@@ -92,7 +92,19 @@ your content:<br>
 <div id="authinput">Author:</div>
 <input type="text" id="i_auth"><br>
 <div id="licenseinput">License:</div>
-<input type="text" id="i_lice"><br></div>
+<select id="i_lice" name="license">
+<option value="CCASA">Creative Commons Share-Alike
+Attribution</option>
+<option value="CCA">Creative Commons Attribution</option>
+<option value="GPL3">GNU General Public License v.3</option>
+<option value="LGPL3">GNU Lesser General Public License
+v.3</option>
+<option value="GFDL3">GNU Free Documentation License v.3</option>
+<option value="GPL2">GNU General Public License v.2</option>
+<option value="LGPL2">GNU Lesser General Public License
+v.2</option>
+<option value="GFDL2">GNU Free Documentation License v.2</option>
+</select></div>
 <div id="advancetoconfirm" class="button">Next: Confirm
 Upload</div>
 </div>
@@ -111,19 +123,8 @@ Upload</div>
 <div id="c_auth">Authorship</div>
 <br>
 <div id="liclabel">License:</div>
-<select id="c_lice" name="license">
-<option value="CCASA">Creative Commons Share-Alike
-Attribution</option>
-<option value="CCA">Creative Commons Attribution</option>
-<option value="GPL3">GNU General Public License v.3</option>
-<option value="LGPL3">GNU Lesser General Public License
-v.3</option>
-<option value="GFDL3">GNU Free Documentation Licens v.3</option>
-<option value="GPL2">GNU General Public License v.2</option>
-<option value="LGPL2">GNU Lesser General Public License
-v.2</option>
-<option value="GFDL2">GNU Free Documentation Licens v.2</option>
-</select></div>
+<div id="c_lice">License</div>
+<br></div>
 <div id="advancetoupload" class="button">Upload your content</div>
 </div>
 </div>

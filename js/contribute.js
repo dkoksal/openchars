@@ -3,7 +3,7 @@ function imageListing() {
     this.age = new Date(); 
     var t = ((Math.floor((Math.random()*9999999) + 1000000)).toString() + this.age).toString();
     this.name = t; t = 0;
-    console.log(this.name);
+    //console.log(this.name);
     this.tags = ["#"];
     this.license = "No license provided";
     this.auth = "ano";
