@@ -83,8 +83,7 @@ h1{
 }
 .thumb{
 	text-align:center;
-	border: 3px;
-	padding: 10%;
+	border: thick;
 }
 .label{
 	background:white;

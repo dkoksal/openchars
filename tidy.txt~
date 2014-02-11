@@ -1,17 +1,12 @@
-line 67 column 33 - Warning: <div> anchor "namelabel" already defined
-line 69 column 33 - Warning: <div> anchor "tagslabel" already defined
-line 70 column 33 - Warning: <div> anchor "authlabel" already defined
-line 79 column 33 - Warning: <div> anchor "namelabel" already defined
-line 80 column 33 - Warning: <div> anchor "tagslabel" already defined
-line 81 column 33 - Warning: <div> anchor "authlabel" already defined
 Info: Document content looks like HTML 4.01 Strict
 Info: No system identifier in emitted doctype
-6 warnings, 0 errors were found!
+No warnings or errors were found.
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
 <html>
 <head>
-<meta name="generator" content="Bluefish 2.2.3" >
+<meta name="generator" content=
+"HTML Tidy for Linux (vers 25 March 2009), see www.w3.org">
 <title>Openchars Prototype</title>
 <meta http-equiv="content-type" content=
 "text/html; charset=us-ascii">
@@ -36,7 +31,6 @@ Misc:<br>
 <div id="filter" class="button">Filter</div>
 <div id="saveas" class="button">Save As</div>
 </div>
-<!--</div>-->
 <div id="spimage" class="info">
 <h2>This div contains the sprite image itself</h2>
 <br>
@@ -59,7 +53,7 @@ Misc:<br>
 <div class="preview thumb"><img id="csimg" src=
 "images/main/Pants/GldPlatePantsMale_01.png" alt="layer" name=
 "csimg"></div>
-<div id="csinfo" class="preview">
+<div class="preview thumb">
 <div id="namelabel">Name:</div>
 <div id="name"></div>
 <br>
@@ -87,9 +81,9 @@ Javascript loader not available</div>
 <div id="metadialog" class="hidden dialog">Input information about
 your content:<br>
 <div id="metamenu">Meta Information:<br>
-<div id="namelabel">Name:</div>
-<input type="text" id="i_name">/br&gt;
-<div id="agelabel">Age:</div>
+<div id="nameinput">Name:</div>
+<input type="text" id="i_name"><br>
+<div id="ageinput">Age:</div>
 <div id="i_age"></div>
 <br>
 <div id="tagsinput">Tags:</div>
@@ -97,7 +91,19 @@ your content:<br>
 <div id="authinput">Author:</div>
 <input type="text" id="i_auth"><br>
 <div id="licenseinput">License:</div>
-<input type="text" id="i_lice"><br></div>
+<select id="i_lice" name="license">
+<option value="CCASA">Creative Commons Share-Alike
+Attribution</option>
+<option value="CCA">Creative Commons Attribution</option>
+<option value="GPL3">GNU General Public License v.3</option>
+<option value="LGPL3">GNU Lesser General Public License
+v.3</option>
+<option value="GFDL3">GNU Free Documentation License v.3</option>
+<option value="GPL2">GNU General Public License v.2</option>
+<option value="LGPL2">GNU Lesser General Public License
+v.2</option>
+<option value="GFDL2">GNU Free Documentation License v.2</option>
+</select></div>
 <div id="advancetoconfirm" class="button">Next: Confirm
 Upload</div>
 </div>
@@ -106,29 +112,18 @@ Upload</div>
 <div id="loclabel">Location:</div>
 <div id="loc">Location of the file</div>
 <br>
-<div id="namelabel">Name:</div>
+<div id="namelabel2">Name:</div>
 <div id="c_name">Name of the image</div>
 <br>
-<div id="tagslabel">Tags:</div>
+<div id="tagslabel2">Tags:</div>
 <div id="c_tags">Tags about the image</div>
 <br>
-<div id="authlabel">Author:</div>
+<div id="authlabel2">Author:</div>
 <div id="c_auth">Authorship</div>
 <br>
 <div id="liclabel">License:</div>
-<select id="c_lice" name="license">
-<option value="CCASA">Creative Commons Share-Alike
-Attribution</option>
-<option value="CCA">Creative Commons Attribution</option>
-<option value="GPL3">GNU General Public License v.3</option>
-<option value="LGPL3">GNU Lesser General Public License
-v.3</option>
-<option value="GFDL3">GNU Free Documentation Licens v.3</option>
-<option value="GPL2">GNU General Public License v.2</option>
-<option value="LGPL2">GNU Lesser General Public License
-v.2</option>
-<option value="GFDL2">GNU Free Documentation Licens v.2</option>
-</select></div>
+<div id="c_lice">License</div>
+<br></div>
 <div id="advancetoupload" class="button">Upload your content</div>
 </div>
 </div>

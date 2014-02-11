@@ -5,11 +5,9 @@ No warnings or errors were found.
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
 <html>
 <head>
-<meta name="generator" content=
-"HTML Tidy for Linux (vers 25 March 2009), see www.w3.org">
+<meta name="generator" content="Bluefish 2.2.3" >
 <title>Openchars Prototype</title>
-<meta http-equiv="content-type" content=
-"text/html; charset=us-ascii">
+<meta http-equiv="content-type" content="text/html; charset=US-ASCII" >
 <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
@@ -31,7 +29,6 @@ Misc:<br>
 <div id="filter" class="button">Filter</div>
 <div id="saveas" class="button">Save As</div>
 </div>
-<!--</div>-->
 <div id="spimage" class="info">
 <h2>This div contains the sprite image itself</h2>
 <br>

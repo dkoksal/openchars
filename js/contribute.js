@@ -24,6 +24,9 @@ imageListing.prototype.render = function() {
 imageListing.prototype.tag = function(tags){
     this.tags = tags.split(', ');
 };
+imageListing.prototype.tag_list = function(){
+	return this.tags.toString();
+};
 imageListing.prototype.set_name = function(name){ 
     this.name = name; 
 };
@@ -60,13 +63,18 @@ imageListing.prototype.get_uid = function(){
 imageListing.prototype.submit = function(){
     $.post("contrib.php",{name:this.get_name(), age:this.get_age(), auth:this.get_auth(), uid:this.get_uid(), license:this.license, tags:this.tags, layer:this.layer})
      .done( function(data){
+     	  $("#loc").html(this.get_name());
+     	  $("#c_name").html(this.get_name());
+     	  $("#c_tags").html(this.tag_list());
+     	  $("#c_auth").html(this.get_auth());
+     	  $("#c_lice").html(this.get_license());
         alert(data);
      })
      .fail( function(data) {
-	alert( data );
+	     alert( data );
      })
      .fail( function(){
-	alert("error");
+	     alert("no PHP server");
      });
 };
 var ContributeObject = new imageListing();
@@ -80,18 +88,18 @@ function advmeta(){
 function advconf(){
     $("#metadialog").addClass("hidden");
     ContributeObject.set_name( $("#i_name" ).val() );
-     $("#c_name").text( ContributeObject.get_name() );
+     //$("#c_name").text( ContributeObject.get_name() );
     ContributeObject.tag( $("#i_tags" ).val() );
-     $("#c_tags").text( ContributeObject.tags );
+     //$("#c_tags").text( ContributeObject.tags );
     ContributeObject.set_auth( $("#i_auth" ).val() );
-     $("#c_auth").text( ContributeObject.get_auth() );
+     //$("#c_auth").text( ContributeObject.get_auth() );
     ContributeObject.set_license( $("#i_lice").val() );
-     $("#c_lice").text( ContributeObject.get_license() );
+     //$("#c_lice").text( ContributeObject.get_license() );
+     ContributeObject.submit();
     $("#confdialog").removeClass("hidden");
 };
 function advupld(){
     $("#confdialog").addClass("hidden");
-    ContributeObject.submit();
     $("#loaddialog").removeClass("hidden");
 };
 //@license-end
