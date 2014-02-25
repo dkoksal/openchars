@@ -64,6 +64,7 @@ imageListing.prototype.submit = function(){
     $.post("contrib.php",{name:this.get_name(), age:this.get_age(), auth:this.get_auth(), uid:this.get_uid(), license:this.license, tags:this.tags, layer:this.layer})
      .done( function(data){
      	  $("#loc").html(data.name);
+     	  console.log("done?");
      	  //$("#c_name").html(this.get_name());
      	  //$("#c_tags").html(this.tag_list());
      	  //$("#c_auth").html(this.get_auth());
